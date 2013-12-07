@@ -1,0 +1,34 @@
+.rs-panel {
+  background: $white;
+  @include box-shadow(#c2c2c2 0px 3px 8px 1px);
+}
+
+.rs-pull-left {
+  float: left;
+}
+
+.rs-pull-right {
+  float: right;
+}
+
+.rs-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rs-quiet {
+  color: $grey400;
+  font-weight: normal;
+}
+
+.rs-no-wrap {
+  white-space: nowrap;
+}
+
+%last-child {
+  & > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
