@@ -13,8 +13,8 @@
     "dist/canon.min.js",
     "dist/canon.min.css"
   ],
-  "dependencies": [
+  "dependencies": {
     "jquery": "~1.10.2",
     "normalize-scss": "~2.1.2"
-  ]
+  }
 }
