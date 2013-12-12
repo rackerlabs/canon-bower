@@ -3,7 +3,9 @@
   position: relative;
   display: inline-block;
 
-  a {
+  a,
+  .rs-dropdown-link,
+  .rs-dropdown-text {
     white-space: nowrap;
   }
 }
@@ -22,7 +24,8 @@
   @include border-radius(3px);
   @include box-shadow(0 0 9px 2px rgba(0, 0, 0, 0.2));
 
-  a {
+  a,
+  .rs-dropdown-link {
     display: block;
     padding: 0 7px;
   }
@@ -43,7 +46,17 @@
   white-space: nowrap;
 }
 
-.rs-dropdown-menu > li:first-child > .rs-dropdown-category {
+.rs-dropdown-item.disabled {
+  a,
+  .rs-dropdown-link {
+    color: $grey300;
+    cursor: default;
+    text-decoration: none;
+  }
+}
+
+.rs-dropdown-menu > li:first-child > .rs-dropdown-category,
+.rs-dropdown-menu > .rs-dropdown-item:first-child > .rs-dropdown-category {
   margin-top: 0;
 }
 
@@ -67,7 +80,8 @@
     @include border-corner-radius(bottom, left, 3px);
     @include border-corner-radius(bottom, right, 3px);
 
-    a {
+    a,
+    .rs-dropdown-link {
       padding: 2px 15px;
       color: #333;
       font-family: $alt-font-family;
@@ -82,7 +96,8 @@
       }
     }
 
-    > li:first-child {
+    > li:first-child,
+    > .rs-dropdown-item:first-child {
       margin-top: 12px;
     }
   }
@@ -95,7 +110,8 @@
   }
 
   .rs-dropdown-category,
-  .rs-dropdown-menu > li:first-child > .rs-dropdown-category {
+  .rs-dropdown-menu > li:first-child > .rs-dropdown-category,
+  .rs-dropdown-menu > .rs-dropdown-item:first-child > .rs-dropdown-category {
     margin: 12px 0 0;
   }
 
@@ -110,6 +126,18 @@
   .rs-icon-external {
     @include icon-sprite(external);
   }
+
+  .rs-dropdown-item.disabled {
+    a,
+    .rs-dropdown-link {
+      color: $grey400;
+      background-color: transparent;
+    }
+
+    .rs-dropdown-caption {
+      color: $grey400;
+    }
+  }
 }
 
 
@@ -123,13 +151,15 @@
     font-smoothing: antialiased;
     padding: 8px 0;
 
-    span {
+    span,
+    .rs-dropdown-text {
       color: #ccc;
       padding: 2px 15px;
       text-decoration: none;
     }
 
-    a {
+    a,
+    .rs-dropdown-link {
       color: #ccc;
       padding: 2px 15px;
       text-decoration: none;
@@ -174,5 +204,17 @@
     font-family: $alt-font-family;
     font-size: 12px;
     font-weight: 200;
+  }
+
+  .rs-dropdown-item.disabled {
+    a,
+    .rs-dropdown-link {
+      color: $grey500;
+      background-color: transparent;
+    }
+
+    .rs-dropdown-caption {
+      color: $grey500;
+    }
   }
 }

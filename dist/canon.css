@@ -431,33 +431,33 @@ table {
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("SourceSansPro-Light-webfont.eot");
-  src: url("SourceSansPro-Light-webfont.eot?#iefix") format("embedded-opentype"), url("SourceSansPro-Light-webfont.woff") format("woff"), url("SourceSansPro-Light-webfont.ttf") format("truetype"), url("SourceSansPro-Light-webfont.svg#SourceSansProLight") format("svg");
+  font-family: "Source Sans Pro";
+  src: url('SourceSansPro-Light-webfont.eot');
+  src: url('SourceSansPro-Light-webfont.eot?#iefix') format('eot'), url('SourceSansPro-Light-webfont.woff') format('woff'), url('SourceSansPro-Light-webfont.ttf') format('truetype'), url('SourceSansPro-Light-webfont.svg#SourceSansProLight') format('svg');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("SourceSansPro-Regular-webfont.eot");
-  src: url("SourceSansPro-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("SourceSansPro-Regular-webfont.woff") format("woff"), url("SourceSansPro-Regular-webfont.ttf") format("truetype"), url("SourceSansPro-Regular-webfont.svg#SourceSansProRegular") format("svg");
+  font-family: "Source Sans Pro";
+  src: url('SourceSansPro-Regular-webfont.eot');
+  src: url('SourceSansPro-Regular-webfont.eot?#iefix') format('eot'), url('SourceSansPro-Regular-webfont.woff') format('woff'), url('SourceSansPro-Regular-webfont.ttf') format('truetype'), url('SourceSansPro-Regular-webfont.svg#SourceSansProRegular') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("SourceSansPro-Semibold-webfont.eot");
-  src: url("SourceSansPro-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("SourceSansPro-Semibold-webfont.woff") format("woff"), url("SourceSansPro-Semibold-webfont.ttf") format("truetype"), url("SourceSansPro-Semibold-webfont.svg#SourceSansProSemibold") format("svg");
+  font-family: "Source Sans Pro";
+  src: url('SourceSansPro-Semibold-webfont.eot');
+  src: url('SourceSansPro-Semibold-webfont.eot?#iefix') format('eot'), url('SourceSansPro-Semibold-webfont.woff') format('woff'), url('SourceSansPro-Semibold-webfont.ttf') format('truetype'), url('SourceSansPro-Semibold-webfont.svg#SourceSansProSemibold') format('svg');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("SourceSansPro-Bold-webfont.eot");
-  src: url("SourceSansPro-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("SourceSansPro-Bold-webfont.woff") format("woff"), url("SourceSansPro-Bold-webfont.ttf") format("truetype"), url("SourceSansPro-Bold-webfont.svg#SourceSansProBold") format("svg");
+  font-family: "Source Sans Pro";
+  src: url('SourceSansPro-Bold-webfont.eot');
+  src: url('SourceSansPro-Bold-webfont.eot?#iefix') format('eot'), url('SourceSansPro-Bold-webfont.woff') format('woff'), url('SourceSansPro-Bold-webfont.ttf') format('truetype'), url('SourceSansPro-Bold-webfont.svg#SourceSansProBold') format('svg');
   font-weight: 700;
   font-style: normal;
 }
@@ -501,16 +501,16 @@ strong {
 
 /* line 34, ../lib/stylesheets/_base.scss */
 p {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
 }
 
 /* line 38, ../lib/stylesheets/_base.scss */
-h1, h2, h3, h4 {
+h1, h2, .rs-page-title, h3, h4 {
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
 }
 
 /* line 42, ../lib/stylesheets/_base.scss */
-h1, h2, h3 {
+h1, h2, .rs-page-title, h3 {
   margin: 0 0 20px;
   font-weight: 600;
   line-height: 30px;
@@ -532,43 +532,39 @@ h1 {
 }
 
 /* line 60, ../lib/stylesheets/_base.scss */
-h2 {
+h2, .rs-page-title {
   font-size: 28px;
 }
-/* line 63, ../lib/stylesheets/_base.scss */
-h2.rs-page-title {
-  color: #c40022;
-}
 
-/* line 68, ../lib/stylesheets/_base.scss */
+/* line 64, ../lib/stylesheets/_base.scss */
 h3 {
   font-size: 22px;
 }
 
-/* line 72, ../lib/stylesheets/_base.scss */
+/* line 68, ../lib/stylesheets/_base.scss */
 h4 {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 78, ../lib/stylesheets/_base.scss */
+/* line 74, ../lib/stylesheets/_base.scss */
 h5 {
   font-size: 12px;
 }
 
-/* line 82, ../lib/stylesheets/_base.scss */
+/* line 78, ../lib/stylesheets/_base.scss */
 h6 {
   font-size: 10px;
 }
 
-/* line 86, ../lib/stylesheets/_base.scss */
+/* line 82, ../lib/stylesheets/_base.scss */
 ol, ul {
   margin: 0 0 20px 25px;
   padding: 0;
 }
 
-/* line 94, ../lib/stylesheets/_base.scss */
+/* line 90, ../lib/stylesheets/_base.scss */
 ol ol,
 ol ul,
 ul ol,
@@ -576,31 +572,36 @@ ul ul {
   margin-bottom: 0;
 }
 
-/* line 98, ../lib/stylesheets/_base.scss */
+/* line 94, ../lib/stylesheets/_base.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 102, ../lib/stylesheets/_base.scss */
+/* line 98, ../lib/stylesheets/_base.scss */
 ul {
   list-style: square;
 }
 
-/* line 106, ../lib/stylesheets/_base.scss */
+/* line 102, ../lib/stylesheets/_base.scss */
 dl {
   margin: 0 0 20px;
 }
 
-/* line 110, ../lib/stylesheets/_base.scss */
+/* line 106, ../lib/stylesheets/_base.scss */
 dd {
   margin: 0 0 0 25px;
 }
 
-/* line 114, ../lib/stylesheets/_base.scss */
+/* line 110, ../lib/stylesheets/_base.scss */
 hr {
   margin: 0 0 20px;
   border: 0;
   border-top: 1px solid #cccccc;
+}
+
+/* line 118, ../lib/stylesheets/_base.scss */
+.rs-page-title {
+  color: #c40022;
 }
 
 /* line 72, ../lib/stylesheets/_mixins.scss */
@@ -1038,9 +1039,8 @@ hr {
 }
 
 /* line 36, ../lib/stylesheets/_grid.scss */
-[class*="span-"].rs-pull-right, [class*="span-"].rs-detail-header-actions,
-.rs-row [class*="span-"].rs-pull-right,
-.rs-row [class*="span-"].rs-detail-header-actions {
+[class*="span-"].rs-pull-right,
+.rs-row [class*="span-"].rs-pull-right {
   float: right;
 }
 
@@ -1157,29 +1157,15 @@ body.rs-responsive .rs-container {
   }
 }
 
-/* line 314, icon/*.png */
-.icon-sprite, .rs-icon-external, .rs-icon-external-dark, .rs-icon-help, .rs-icon-error-indicator, .rs-cog, .rs-cog:active, .rs-cog.active, .rs-cog:hover, .rs-cog.hover, .rs-cog[disabled], .rs-cog.disabled, .rs-delete, .rs-caret, .rs-caret[disabled], .rs-caret.disabled, .rs-btn-action > .rs-cog, .rs-btn-action[disabled] > .rs-cog, .rs-btn-action.disabled > .rs-cog, .rs-btn-action[disabled] > .rs-caret, .rs-btn-action.disabled > .rs-caret, .rs-edit, .rs-edit[disabled], .rs-edit.disabled, .rs-collapsible-section.expanded > .rs-detail-section-header > .rs-caret, .rs-collapsible-section.expanded > .rs-detail-section-header.hover > .rs-caret,
+/* line 330, icon/*.png */
+.icon-sprite, .rs-icon-external, .rs-icon-external-dark, .rs-icon-help, .rs-icon-error-indicator, .rs-cog, .rs-cog:active, .rs-cog.active, .rs-cog:hover, .rs-cog.hover, .rs-cog[disabled], .rs-cog.disabled, .rs-plus, .rs-plus:active, .rs-plus.active, .rs-plus:hover, .rs-plus.hover, .rs-delete, .rs-caret, .rs-caret[disabled], .rs-caret.disabled, .rs-btn-action > .rs-cog, .rs-btn-action[disabled] > .rs-cog, .rs-btn-action.disabled > .rs-cog, .rs-btn-action[disabled] > .rs-caret, .rs-btn-action.disabled > .rs-caret, .rs-edit, .rs-edit[disabled], .rs-edit.disabled, .rs-collapsible-section.expanded > .rs-detail-section-header > .rs-caret, .rs-collapsible-section.expanded > .rs-detail-section-header.hover > .rs-caret,
 .rs-collapsible-section.expanded > .rs-detail-section-header:hover > .rs-caret, .rs-collapsible-section.collapsed > .rs-detail-section-header > .rs-caret, .rs-collapsible-section.collapsed > .rs-detail-section-header.hover > .rs-caret,
-.rs-collapsible-section.collapsed > .rs-detail-section-header:hover > .rs-caret, .rs-control-group.success .rs-validation-indicator, .rs-control-group.error .rs-validation-indicator, .rs-table-sort-asc > .rs-table-sort-indicator, .rs-table-sort-asc.hover > .rs-table-sort-indicator,
+.rs-collapsible-section.collapsed > .rs-detail-section-header:hover > .rs-caret, .rs-control-group.success .rs-validation-indicator, .rs-form-create .rs-detail-item.success .rs-validation-indicator, .rs-control-group.error .rs-validation-indicator, .rs-form-create .rs-detail-item.error .rs-validation-indicator, .rs-table-sort-asc > .rs-table-sort-indicator, .rs-table-sort-asc.hover > .rs-table-sort-indicator,
 .rs-table-sort-asc:hover > .rs-table-sort-indicator, .rs-table-sort-desc > .rs-table-sort-indicator, .rs-table-sort-desc.hover > .rs-table-sort-indicator,
-.rs-table-sort-desc:hover > .rs-table-sort-indicator, .rs-primary-dropdown .rs-icon-external, .rs-utility-dropdown .rs-dropdown-menu a:hover .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a.hover .rs-icon-external-dark, .rs-nav-utility .rs-nav-item.rs-dropdown .rs-caret, .rs-nav-utility .rs-footer .rs-dropdown.rs-link .rs-caret, .rs-footer .rs-nav-utility .rs-dropdown.rs-link .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-dropdown.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-dropdown.rs-link .rs-caret, .rs-nav-utility .rs-footer .rs-links > li.rs-dropdown .rs-caret, .rs-footer .rs-nav-utility .rs-links > li.rs-dropdown .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-links > li.rs-dropdown .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-links > li.rs-dropdown .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-footer .rs-dropdown.rs-link:hover .rs-caret, .rs-footer .rs-nav-utility .rs-dropdown.rs-link:hover .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-dropdown.rs-link:hover .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-dropdown.rs-link:hover .rs-caret, .rs-nav-utility .rs-footer .rs-links > li.rs-dropdown:hover .rs-caret, .rs-footer .rs-nav-utility .rs-links > li.rs-dropdown:hover .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-links > li.rs-dropdown:hover .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-links > li.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-footer .rs-dropdown.hover.rs-link .rs-caret, .rs-footer .rs-nav-utility .rs-dropdown.hover.rs-link .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-dropdown.hover.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-dropdown.hover.rs-link .rs-caret, .rs-nav-utility .rs-footer .rs-links > li.rs-dropdown.hover .rs-caret, .rs-footer .rs-nav-utility .rs-links > li.rs-dropdown.hover .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-links > li.rs-dropdown.hover .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-links > li.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-utility .rs-footer .rs-dropdown.active.rs-link .rs-caret, .rs-footer .rs-nav-utility .rs-dropdown.active.rs-link .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-dropdown.active.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-dropdown.active.rs-link .rs-caret, .rs-nav-utility .rs-footer .rs-links > li.rs-dropdown.active .rs-caret, .rs-footer .rs-nav-utility .rs-links > li.rs-dropdown.active .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-links > li.rs-dropdown.active .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-links > li.rs-dropdown.active .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.active .rs-caret {
-  background: url('icon-sd150544a4c.png') no-repeat;
+.rs-table-sort-desc:hover > .rs-table-sort-indicator, .rs-primary-dropdown .rs-icon-external, .rs-utility-dropdown .rs-dropdown-menu a:hover .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a.hover .rs-icon-external-dark,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link:hover .rs-icon-external-dark,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.hover .rs-icon-external-dark, .rs-nav-utility .rs-nav-item.rs-dropdown .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.active .rs-caret {
+  background: url('icon-sa54c8cdcf3.png') no-repeat;
 }
 
 /* line 13, ../lib/stylesheets/_sprites.scss */
@@ -1218,7 +1204,7 @@ body.rs-responsive .rs-container {
   width: 13px;
   height: 13px;
   vertical-align: text-top;
-  background-position: 0 -614px;
+  background-position: 0 -658px;
   margin-left: 5px;
 }
 
@@ -1258,7 +1244,15 @@ body.rs-responsive .rs-container {
   white-space: nowrap;
 }
 
-/* line 30, ../lib/stylesheets/_utilities.scss */
+/* line 29, ../lib/stylesheets/_utilities.scss */
+.rs-key-divider:after {
+  content: '\2022';
+  margin: 0 10px;
+  font-weight: bold;
+  line-height: 13px;
+}
+
+/* line 37, ../lib/stylesheets/_utilities.scss */
 .rs-tab-pane > *:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
@@ -1460,6 +1454,25 @@ input::-moz-focus-inner {
 }
 
 /* line 172, ../lib/stylesheets/patterns/_buttons.scss */
+.rs-plus {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  background-position: 0 -614px;
+}
+/* line 187, ../lib/stylesheets/patterns/_buttons.scss */
+.rs-plus:active, .rs-plus.active, .rs-plus:hover, .rs-plus.hover {
+  background-position: 0 -592px;
+}
+
+/* line 192, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-delete {
   width: 16px;
   height: 16px;
@@ -1471,10 +1484,10 @@ input::-moz-focus-inner {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
-  background-position: 0 -717px;
+  background-position: 0 -761px;
 }
 
-/* line 185, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 205, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-caret {
   width: 10px;
   height: 10px;
@@ -1483,13 +1496,13 @@ input::-moz-focus-inner {
   vertical-align: middle;
   background-position: 0 -281px;
 }
-/* line 193, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 213, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-caret[disabled], .rs-caret.disabled {
   cursor: default;
   background-position: 0 -340px;
 }
 
-/* line 200, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 220, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-action > .rs-cog {
   width: 13px;
   height: 13px;
@@ -1497,23 +1510,23 @@ input::-moz-focus-inner {
   margin-right: 1px;
   background-position: 0 -121px;
 }
-/* line 208, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 228, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-action > .rs-caret {
   margin-top: 2px;
   margin-left: 1px;
 }
-/* line 215, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 235, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-action[disabled] > .rs-cog, .rs-btn-action.disabled > .rs-cog {
   cursor: default;
   background-position: 0 -144px;
 }
-/* line 220, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 240, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-action[disabled] > .rs-caret, .rs-btn-action.disabled > .rs-caret {
   cursor: default;
   background-position: 0 -340px;
 }
 
-/* line 227, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 247, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-group {
   margin: 0 0 10px;
 }
@@ -1530,14 +1543,14 @@ input::-moz-focus-inner {
 .rs-btn-group {
   zoom: 1;
 }
-/* line 231, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 251, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-group > .rs-btn {
   display: block;
   float: left;
   margin-right: 10px;
 }
 
-/* line 238, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 258, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-edit {
   display: inline-block;
   width: 19px;
@@ -1548,22 +1561,22 @@ input::-moz-focus-inner {
   cursor: pointer;
   background-position: 0 -313px;
 }
-/* line 250, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 270, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-edit:hover, .rs-edit.hover {
   border-color: #d8d8d8;
 }
-/* line 255, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 275, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-edit:active, .rs-edit.active {
   border-color: transparent;
 }
-/* line 260, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 280, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-edit[disabled], .rs-edit.disabled {
   border-color: transparent;
   cursor: default;
   background-position: 0 -388px;
 }
 
-/* line 270, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 290, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-controls .rs-edit,
 .rs-controls-static .rs-edit,
 .rs-detail-value .rs-edit {
@@ -1571,24 +1584,25 @@ input::-moz-focus-inner {
   margin-left: 13px;
 }
 
-/* line 2, ../lib/stylesheets/patterns/_detail-view.scss */
-.rs-detail-section + .rs-detail-section, .rs-detail-header + .rs-detail-section, .rs-detail-section + .rs-detail-header, .rs-detail-header + .rs-detail-header {
+/* line 3, ../lib/stylesheets/patterns/_detail-view.scss */
+.rs-detail-section + .rs-detail-section,
+.rs-detail-header + .rs-detail-section {
   border-top: 1px solid #eee;
 }
 
-/* line 6, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 7, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-detail-section-header {
   padding: 30px 30px 20px;
   border-top: 1px solid #fff;
 }
 
-/* line 12, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 13, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-detail-section-title,
 .rs-detail-section-subtitle {
   display: inline-block;
 }
 
-/* line 16, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 17, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-detail-section-title {
   margin-right: 10px;
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
@@ -1596,18 +1610,18 @@ input::-moz-focus-inner {
   font-weight: 600;
 }
 
-/* line 23, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 24, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-detail-section-subtitle {
   color: #999;
 }
 
-/* line 27, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 28, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-detail-section-body {
   padding: 0 30px;
   margin: 0 0 30px;
 }
 
-/* line 35, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 36, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section > .rs-detail-section-header > .rs-caret {
   width: 13px;
   height: 13px;
@@ -1615,12 +1629,12 @@ input::-moz-focus-inner {
   float: right;
 }
 
-/* line 46, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 47, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section.expanded > .rs-detail-section-header,
 .rs-collapsible-section.collapsed > .rs-detail-section-header {
   cursor: pointer;
 }
-/* line 51, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 52, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section.expanded > .rs-detail-section-header.hover,
 .rs-collapsible-section.expanded > .rs-detail-section-header:hover,
 .rs-collapsible-section.collapsed > .rs-detail-section-header.hover,
@@ -1632,51 +1646,51 @@ input::-moz-focus-inner {
   background: linear-gradient(#f7f7f7, #ffffff);
 }
 
-/* line 58, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 59, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section.loading .rs-detail-section-header,
 .rs-collapsible-section.collapsed .rs-detail-section-header {
   padding-bottom: 30px;
 }
-/* line 62, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 63, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section.loading .rs-detail-section-body,
 .rs-collapsible-section.collapsed .rs-detail-section-body {
   display: none;
 }
 
-/* line 69, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 70, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section.loading .rs-detail-section-subtitle,
 .rs-collapsible-section.expanded .rs-detail-section-subtitle {
   display: none;
 }
 
-/* line 76, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 77, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section.expanded > .rs-detail-section-header > .rs-caret {
   background-position: 0 -507px;
 }
-/* line 83, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 84, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section.expanded > .rs-detail-section-header.hover > .rs-caret,
 .rs-collapsible-section.expanded > .rs-detail-section-header:hover > .rs-caret {
   background-position: 0 -530px;
 }
 
-/* line 91, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 92, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section.collapsed > .rs-detail-section-header > .rs-caret {
   background-position: 0 -438px;
 }
-/* line 98, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 99, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section.collapsed > .rs-detail-section-header.hover > .rs-caret,
 .rs-collapsible-section.collapsed > .rs-detail-section-header:hover > .rs-caret {
   background-position: 0 -461px;
 }
 
-/* line 106, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 107, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-collapsible-section.loading > .rs-detail-section-header > .rs-caret {
   width: 16px;
   height: 16px;
   background: url("loading-indicator.gif");
 }
 
-/* line 115, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 116, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-detail-header {
   padding: 30px;
 }
@@ -1702,14 +1716,38 @@ input::-moz-focus-inner {
   text-transform: uppercase;
 }
 
-/* line 143, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 144, ../lib/stylesheets/patterns/_detail-view.scss */
+.rs-create-header {
+  padding: 30px 30px 0 30px;
+}
+/* line 147, ../lib/stylesheets/patterns/_detail-view.scss */
+.rs-create-header + .rs-detail-section {
+  border-top: 1px solid #fff;
+}
+
+/* line 152, ../lib/stylesheets/patterns/_detail-view.scss */
+.rs-create-header + .rs-detail-section .rs-detail-section-header {
+  padding-top: 0;
+}
+
+/* line 156, ../lib/stylesheets/patterns/_detail-view.scss */
+.rs-create-footer {
+  border-top: 1px solid #eee;
+}
+/* line 159, ../lib/stylesheets/patterns/_detail-view.scss */
+.rs-create-footer .rs-detail-section-body {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 166, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-detail-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 149, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 172, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-detail-item {
   margin: 0 0 10px;
 }
@@ -1727,7 +1765,7 @@ input::-moz-focus-inner {
   zoom: 1;
 }
 
-/* line 155, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 178, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-detail-key {
   width: 120px;
   clear: left;
@@ -1736,7 +1774,7 @@ input::-moz-focus-inner {
   text-align: right;
 }
 
-/* line 163, ../lib/stylesheets/patterns/_detail-view.scss */
+/* line 186, ../lib/stylesheets/patterns/_detail-view.scss */
 .rs-detail-value {
   margin-left: 140px;
 }
@@ -1754,278 +1792,48 @@ input::-moz-focus-inner {
   color: #999;
 }
 /* line 11, ../lib/stylesheets/patterns/_footer.scss */
-.rs-footer .rs-nav, .rs-footer .rs-links,
-.rs-footer .rs-nav-footer .rs-links,
-.rs-nav-footer .rs-footer .rs-links,
-.rs-nav-footer .rs-nav,
-.rs-nav-footer .rs-footer .rs-links,
-.rs-footer .rs-nav-footer .rs-links,
-.rs-nav-footer .rs-links {
+.rs-footer .rs-nav,
+.rs-nav-footer .rs-nav {
   float: left;
   padding: 7px 0;
 }
 /* line 16, ../lib/stylesheets/patterns/_footer.scss */
-.rs-footer .rs-nav.rs-pull-right, .rs-footer .rs-nav.rs-detail-header-actions, .rs-footer .rs-detail-header-actions.rs-links,
-.rs-footer .rs-nav-footer .rs-detail-header-actions.rs-links,
-.rs-nav-footer .rs-footer .rs-detail-header-actions.rs-links, .rs-footer .rs-pull-right.rs-links,
-.rs-footer .rs-nav-footer .rs-pull-right.rs-links,
-.rs-nav-footer .rs-footer .rs-pull-right.rs-links,
-.rs-nav-footer .rs-nav.rs-pull-right,
-.rs-nav-footer .rs-nav.rs-detail-header-actions,
-.rs-nav-footer .rs-footer .rs-detail-header-actions.rs-links,
-.rs-footer .rs-nav-footer .rs-detail-header-actions.rs-links,
-.rs-nav-footer .rs-detail-header-actions.rs-links,
-.rs-nav-footer .rs-footer .rs-pull-right.rs-links,
-.rs-footer .rs-nav-footer .rs-pull-right.rs-links,
-.rs-nav-footer .rs-pull-right.rs-links {
+.rs-footer .rs-nav.rs-pull-right,
+.rs-nav-footer .rs-nav.rs-pull-right {
   float: right;
 }
 /* line 20, ../lib/stylesheets/patterns/_footer.scss */
-.rs-footer .rs-nav-item, .rs-footer .rs-link,
-.rs-footer .rs-nav-footer .rs-link,
-.rs-nav-footer .rs-footer .rs-link, .rs-footer .rs-links > li,
-.rs-footer .rs-nav-footer .rs-links > li,
-.rs-nav-footer .rs-footer .rs-links > li, .rs-footer .rs-nav > li,
+.rs-footer .rs-nav-item, .rs-footer .rs-nav > li,
 .rs-nav-footer .rs-nav-item,
-.rs-nav-footer .rs-footer .rs-link,
-.rs-footer .rs-nav-footer .rs-link,
-.rs-nav-footer .rs-link,
-.rs-nav-footer .rs-footer .rs-links > li,
-.rs-footer .rs-nav-footer .rs-links > li,
-.rs-nav-footer .rs-links > li,
 .rs-nav-footer .rs-nav > li {
   float: left;
 }
 /* line 24, ../lib/stylesheets/patterns/_footer.scss */
-.rs-footer .rs-nav-item + .rs-nav-item, .rs-footer .rs-link + .rs-nav-item,
-.rs-footer .rs-nav-footer .rs-link + .rs-nav-item,
-.rs-nav-footer .rs-footer .rs-link + .rs-nav-item, .rs-footer .rs-links > li + .rs-nav-item,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-nav-item,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-nav-item, .rs-footer .rs-nav > li + .rs-nav-item, .rs-footer .rs-nav-item + .rs-link, .rs-footer .rs-link + .rs-link,
-.rs-footer .rs-nav-footer .rs-link + .rs-link,
-.rs-nav-footer .rs-footer .rs-link + .rs-link, .rs-footer .rs-links > li + .rs-link,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link, .rs-footer .rs-nav > li + .rs-link,
-.rs-footer .rs-nav-footer .rs-nav-item + .rs-link,
-.rs-nav-footer .rs-footer .rs-nav-item + .rs-link,
-.rs-footer .rs-nav-footer .rs-link + .rs-link,
-.rs-nav-footer .rs-footer .rs-link + .rs-link,
-.rs-footer .rs-nav-footer .rs-link + .rs-link,
-.rs-nav-footer .rs-footer .rs-link + .rs-link,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link,
-.rs-footer .rs-nav-footer .rs-nav > li + .rs-link,
-.rs-nav-footer .rs-footer .rs-nav > li + .rs-link, .rs-footer .rs-links > .rs-nav-item + li, .rs-footer .rs-links > .rs-link + li,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li, .rs-footer .rs-links > li + li,
-.rs-footer .rs-nav-footer .rs-links > li + li,
-.rs-nav-footer .rs-footer .rs-links > li + li, .rs-footer .rs-links.rs-nav > li + li,
-.rs-footer .rs-nav-footer .rs-links > .rs-nav-item + li,
-.rs-nav-footer .rs-footer .rs-links > .rs-nav-item + li,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li,
-.rs-footer .rs-nav-footer .rs-links > li + li,
-.rs-nav-footer .rs-footer .rs-links > li + li,
-.rs-footer .rs-nav-footer .rs-links > li + li,
-.rs-nav-footer .rs-footer .rs-links > li + li,
-.rs-footer .rs-nav-footer .rs-links.rs-nav > li + li,
-.rs-nav-footer .rs-footer .rs-links.rs-nav > li + li, .rs-footer .rs-nav > .rs-nav-item + li, .rs-footer .rs-nav > .rs-link + li,
-.rs-footer .rs-nav-footer .rs-nav > .rs-link + li,
-.rs-nav-footer .rs-footer .rs-nav > .rs-link + li, .rs-footer .rs-nav.rs-links > li + li,
-.rs-footer .rs-nav-footer .rs-nav.rs-links > li + li,
-.rs-nav-footer .rs-footer .rs-nav.rs-links > li + li, .rs-footer .rs-nav > li + li,
+.rs-footer .rs-nav-item + .rs-nav-item, .rs-footer .rs-nav > li + .rs-nav-item, .rs-footer .rs-nav > .rs-nav-item + li, .rs-footer .rs-nav > li + li,
 .rs-nav-footer .rs-nav-item + .rs-nav-item,
-.rs-nav-footer .rs-footer .rs-link + .rs-nav-item,
-.rs-footer .rs-nav-footer .rs-link + .rs-nav-item,
-.rs-nav-footer .rs-link + .rs-nav-item,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-nav-item,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-nav-item,
-.rs-nav-footer .rs-links > li + .rs-nav-item,
 .rs-nav-footer .rs-nav > li + .rs-nav-item,
-.rs-nav-footer .rs-footer .rs-nav-item + .rs-link,
-.rs-footer .rs-nav-footer .rs-nav-item + .rs-link,
-.rs-nav-footer .rs-footer .rs-link + .rs-link,
-.rs-footer .rs-nav-footer .rs-link + .rs-link,
-.rs-nav-footer .rs-footer .rs-link + .rs-link,
-.rs-footer .rs-nav-footer .rs-link + .rs-link,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link,
-.rs-nav-footer .rs-footer .rs-nav > li + .rs-link,
-.rs-footer .rs-nav-footer .rs-nav > li + .rs-link,
-.rs-nav-footer .rs-nav-item + .rs-link,
-.rs-nav-footer .rs-footer .rs-link + .rs-link,
-.rs-footer .rs-nav-footer .rs-link + .rs-link,
-.rs-nav-footer .rs-link + .rs-link,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link,
-.rs-nav-footer .rs-links > li + .rs-link,
-.rs-nav-footer .rs-nav > li + .rs-link,
-.rs-nav-footer .rs-footer .rs-links > .rs-nav-item + li,
-.rs-footer .rs-nav-footer .rs-links > .rs-nav-item + li,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li,
-.rs-nav-footer .rs-footer .rs-links > li + li,
-.rs-footer .rs-nav-footer .rs-links > li + li,
-.rs-nav-footer .rs-footer .rs-links > li + li,
-.rs-footer .rs-nav-footer .rs-links > li + li,
-.rs-nav-footer .rs-footer .rs-links.rs-nav > li + li,
-.rs-footer .rs-nav-footer .rs-links.rs-nav > li + li,
-.rs-nav-footer .rs-links > .rs-nav-item + li,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li,
-.rs-nav-footer .rs-links > .rs-link + li,
-.rs-nav-footer .rs-footer .rs-links > li + li,
-.rs-footer .rs-nav-footer .rs-links > li + li,
-.rs-nav-footer .rs-links > li + li,
-.rs-nav-footer .rs-links.rs-nav > li + li,
 .rs-nav-footer .rs-nav > .rs-nav-item + li,
-.rs-nav-footer .rs-footer .rs-nav > .rs-link + li,
-.rs-footer .rs-nav-footer .rs-nav > .rs-link + li,
-.rs-nav-footer .rs-nav > .rs-link + li,
-.rs-nav-footer .rs-footer .rs-nav.rs-links > li + li,
-.rs-footer .rs-nav-footer .rs-nav.rs-links > li + li,
-.rs-nav-footer .rs-nav.rs-links > li + li,
 .rs-nav-footer .rs-nav > li + li {
   padding: 0 0 0 10px;
 }
 /* line 28, ../lib/stylesheets/patterns/_footer.scss */
-.rs-footer .rs-nav-item + .rs-nav-item:before, .rs-footer .rs-link + .rs-nav-item:before,
-.rs-footer .rs-nav-footer .rs-link + .rs-nav-item:before,
-.rs-nav-footer .rs-footer .rs-link + .rs-nav-item:before, .rs-footer .rs-links > li + .rs-nav-item:before,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-nav-item:before,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-nav-item:before, .rs-footer .rs-nav > li + .rs-nav-item:before, .rs-footer .rs-nav-item + .rs-link:before, .rs-footer .rs-link + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-link + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-link + .rs-link:before, .rs-footer .rs-links > li + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link:before, .rs-footer .rs-nav > li + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-nav-item + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-nav-item + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-link + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-link + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-link + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-link + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-nav > li + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-nav > li + .rs-link:before, .rs-footer .rs-links > .rs-nav-item + li:before, .rs-footer .rs-links > .rs-link + li:before,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li:before,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li:before, .rs-footer .rs-links > li + li:before,
-.rs-footer .rs-nav-footer .rs-links > li + li:before,
-.rs-nav-footer .rs-footer .rs-links > li + li:before, .rs-footer .rs-links.rs-nav > li + li:before,
-.rs-footer .rs-nav-footer .rs-links > .rs-nav-item + li:before,
-.rs-nav-footer .rs-footer .rs-links > .rs-nav-item + li:before,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li:before,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li:before,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li:before,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li:before,
-.rs-footer .rs-nav-footer .rs-links > li + li:before,
-.rs-nav-footer .rs-footer .rs-links > li + li:before,
-.rs-footer .rs-nav-footer .rs-links > li + li:before,
-.rs-nav-footer .rs-footer .rs-links > li + li:before,
-.rs-footer .rs-nav-footer .rs-links.rs-nav > li + li:before,
-.rs-nav-footer .rs-footer .rs-links.rs-nav > li + li:before, .rs-footer .rs-nav > .rs-nav-item + li:before, .rs-footer .rs-nav > .rs-link + li:before,
-.rs-footer .rs-nav-footer .rs-nav > .rs-link + li:before,
-.rs-nav-footer .rs-footer .rs-nav > .rs-link + li:before, .rs-footer .rs-nav.rs-links > li + li:before,
-.rs-footer .rs-nav-footer .rs-nav.rs-links > li + li:before,
-.rs-nav-footer .rs-footer .rs-nav.rs-links > li + li:before, .rs-footer .rs-nav > li + li:before,
+.rs-footer .rs-nav-item + .rs-nav-item:before, .rs-footer .rs-nav > li + .rs-nav-item:before, .rs-footer .rs-nav > .rs-nav-item + li:before, .rs-footer .rs-nav > li + li:before,
 .rs-nav-footer .rs-nav-item + .rs-nav-item:before,
-.rs-nav-footer .rs-footer .rs-link + .rs-nav-item:before,
-.rs-footer .rs-nav-footer .rs-link + .rs-nav-item:before,
-.rs-nav-footer .rs-link + .rs-nav-item:before,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-nav-item:before,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-nav-item:before,
-.rs-nav-footer .rs-links > li + .rs-nav-item:before,
 .rs-nav-footer .rs-nav > li + .rs-nav-item:before,
-.rs-nav-footer .rs-footer .rs-nav-item + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-nav-item + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-link + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-link + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-link + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-link + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-nav > li + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-nav > li + .rs-link:before,
-.rs-nav-footer .rs-nav-item + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-link + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-link + .rs-link:before,
-.rs-nav-footer .rs-link + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-links > li + .rs-link:before,
-.rs-footer .rs-nav-footer .rs-links > li + .rs-link:before,
-.rs-nav-footer .rs-links > li + .rs-link:before,
-.rs-nav-footer .rs-nav > li + .rs-link:before,
-.rs-nav-footer .rs-footer .rs-links > .rs-nav-item + li:before,
-.rs-footer .rs-nav-footer .rs-links > .rs-nav-item + li:before,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li:before,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li:before,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li:before,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li:before,
-.rs-nav-footer .rs-footer .rs-links > li + li:before,
-.rs-footer .rs-nav-footer .rs-links > li + li:before,
-.rs-nav-footer .rs-footer .rs-links > li + li:before,
-.rs-footer .rs-nav-footer .rs-links > li + li:before,
-.rs-nav-footer .rs-footer .rs-links.rs-nav > li + li:before,
-.rs-footer .rs-nav-footer .rs-links.rs-nav > li + li:before,
-.rs-nav-footer .rs-links > .rs-nav-item + li:before,
-.rs-nav-footer .rs-footer .rs-links > .rs-link + li:before,
-.rs-footer .rs-nav-footer .rs-links > .rs-link + li:before,
-.rs-nav-footer .rs-links > .rs-link + li:before,
-.rs-nav-footer .rs-footer .rs-links > li + li:before,
-.rs-footer .rs-nav-footer .rs-links > li + li:before,
-.rs-nav-footer .rs-links > li + li:before,
-.rs-nav-footer .rs-links.rs-nav > li + li:before,
 .rs-nav-footer .rs-nav > .rs-nav-item + li:before,
-.rs-nav-footer .rs-footer .rs-nav > .rs-link + li:before,
-.rs-footer .rs-nav-footer .rs-nav > .rs-link + li:before,
-.rs-nav-footer .rs-nav > .rs-link + li:before,
-.rs-nav-footer .rs-footer .rs-nav.rs-links > li + li:before,
-.rs-footer .rs-nav-footer .rs-nav.rs-links > li + li:before,
-.rs-nav-footer .rs-nav.rs-links > li + li:before,
 .rs-nav-footer .rs-nav > li + li:before {
   padding-right: 10px;
   content: "\2022";
 }
 /* line 33, ../lib/stylesheets/patterns/_footer.scss */
-.rs-footer .rs-nav-item a, .rs-footer .rs-link a,
-.rs-footer .rs-nav-footer .rs-link a,
-.rs-nav-footer .rs-footer .rs-link a, .rs-footer .rs-links > li a,
-.rs-footer .rs-nav-footer .rs-links > li a,
-.rs-nav-footer .rs-footer .rs-links > li a, .rs-footer .rs-nav > li a,
+.rs-footer .rs-nav-item a, .rs-footer .rs-nav > li a,
 .rs-nav-footer .rs-nav-item a,
-.rs-nav-footer .rs-footer .rs-link a,
-.rs-footer .rs-nav-footer .rs-link a,
-.rs-nav-footer .rs-link a,
-.rs-nav-footer .rs-footer .rs-links > li a,
-.rs-footer .rs-nav-footer .rs-links > li a,
-.rs-nav-footer .rs-links > li a,
 .rs-nav-footer .rs-nav > li a {
   display: inline;
 }
 /* line 36, ../lib/stylesheets/patterns/_footer.scss */
-.rs-footer .rs-nav-item a:hover, .rs-footer .rs-link a:hover,
-.rs-footer .rs-nav-footer .rs-link a:hover,
-.rs-nav-footer .rs-footer .rs-link a:hover, .rs-footer .rs-links > li a:hover,
-.rs-footer .rs-nav-footer .rs-links > li a:hover,
-.rs-nav-footer .rs-footer .rs-links > li a:hover, .rs-footer .rs-nav > li a:hover,
+.rs-footer .rs-nav-item a:hover, .rs-footer .rs-nav > li a:hover,
 .rs-nav-footer .rs-nav-item a:hover,
-.rs-nav-footer .rs-footer .rs-link a:hover,
-.rs-footer .rs-nav-footer .rs-link a:hover,
-.rs-nav-footer .rs-link a:hover,
-.rs-nav-footer .rs-footer .rs-links > li a:hover,
-.rs-footer .rs-nav-footer .rs-links > li a:hover,
-.rs-nav-footer .rs-links > li a:hover,
 .rs-nav-footer .rs-nav > li a:hover {
   text-decoration: underline;
 }
@@ -2034,15 +1842,39 @@ input::-moz-focus-inner {
 .rs-nav-footer .rs-link {
   display: inline-block;
   margin: 0;
+  float: left;
   padding: 7px 0;
 }
-/* line 49, ../lib/stylesheets/patterns/_footer.scss */
-.rs-footer .rs-link.rs-pull-right, .rs-footer .rs-link.rs-detail-header-actions,
-.rs-nav-footer .rs-link.rs-pull-right,
-.rs-nav-footer .rs-link.rs-detail-header-actions {
+/* line 48, ../lib/stylesheets/patterns/_footer.scss */
+.rs-footer .rs-link.rs-pull-right,
+.rs-nav-footer .rs-link.rs-pull-right {
   float: right;
 }
+/* line 52, ../lib/stylesheets/patterns/_footer.scss */
+.rs-footer .rs-links,
+.rs-nav-footer .rs-links {
+  float: left;
+  padding: 7px 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 59, ../lib/stylesheets/patterns/_footer.scss */
+.rs-footer .rs-links > li,
+.rs-nav-footer .rs-links > li {
+  float: left;
+}
 /* line 61, ../lib/stylesheets/patterns/_footer.scss */
+.rs-footer .rs-links > li + li,
+.rs-nav-footer .rs-links > li + li {
+  padding: 0 0 0 10px;
+}
+/* line 64, ../lib/stylesheets/patterns/_footer.scss */
+.rs-footer .rs-links > li + li:before,
+.rs-nav-footer .rs-links > li + li:before {
+  padding-right: 10px;
+  content: "\2022";
+}
+/* line 71, ../lib/stylesheets/patterns/_footer.scss */
 .rs-footer .rs-container .rs-links > li > a,
 .rs-nav-footer .rs-container .rs-links > li > a {
   display: inline;
@@ -2066,18 +1898,19 @@ legend {
   line-height: 30px;
 }
 
-/* line 21, ../lib/stylesheets/patterns/_forms.scss */
+/* line 22, ../lib/stylesheets/patterns/_forms.scss */
 label,
 input[type="text"],
 input[type="password"],
 select,
-textarea {
+textarea,
+.rs-input {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 13px;
   line-height: 20px;
 }
 
-/* line 30, ../lib/stylesheets/patterns/_forms.scss */
+/* line 31, ../lib/stylesheets/patterns/_forms.scss */
 label,
 input[type="checkbox"],
 input[type="radio"],
@@ -2085,38 +1918,40 @@ select {
   cursor: pointer;
 }
 
-/* line 35, ../lib/stylesheets/patterns/_forms.scss */
+/* line 36, ../lib/stylesheets/patterns/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   margin: 0;
 }
 
-/* line 39, ../lib/stylesheets/patterns/_forms.scss */
+/* line 40, ../lib/stylesheets/patterns/_forms.scss */
 label {
   display: block;
   margin: 0 0 5px;
 }
 
-/* line 44, ../lib/stylesheets/patterns/_forms.scss */
+/* line 45, ../lib/stylesheets/patterns/_forms.scss */
 label:after {
   content: ":";
 }
 
-/* line 52, ../lib/stylesheets/patterns/_forms.scss */
+/* line 54, ../lib/stylesheets/patterns/_forms.scss */
 input[type="text"],
 input[type="password"],
 input[type="file"],
 select,
-textarea {
+textarea,
+.rs-input {
   margin: 0 0 10px;
   vertical-align: middle;
 }
 
-/* line 60, ../lib/stylesheets/patterns/_forms.scss */
+/* line 63, ../lib/stylesheets/patterns/_forms.scss */
 input[type="text"],
 input[type="password"],
 select,
-textarea {
+textarea,
+.rs-input {
   padding: 2px 4px;
   height: 25px;
   border: 1px solid #999999;
@@ -2129,28 +1964,32 @@ textarea {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 69, ../lib/stylesheets/patterns/_forms.scss */
+/* line 72, ../lib/stylesheets/patterns/_forms.scss */
 input[type="text"]:focus, input[type="text"].focus,
 input[type="password"]:focus,
 input[type="password"].focus,
 select:focus,
 select.focus,
 textarea:focus,
-textarea.focus {
+textarea.focus,
+.rs-input:focus,
+.rs-input.focus {
   background-color: #f1f6ff;
   outline: none;
   -webkit-box-shadow: 0 0 0 2px #1e6ec1;
   -moz-box-shadow: 0 0 0 2px #1e6ec1;
   box-shadow: 0 0 0 2px #1e6ec1;
 }
-/* line 77, ../lib/stylesheets/patterns/_forms.scss */
+/* line 80, ../lib/stylesheets/patterns/_forms.scss */
 input[type="text"][readonly], input[type="text"][disabled],
 input[type="password"][readonly],
 input[type="password"][disabled],
 select[readonly],
 select[disabled],
 textarea[readonly],
-textarea[disabled] {
+textarea[disabled],
+.rs-input[readonly],
+.rs-input[disabled] {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -2159,79 +1998,83 @@ textarea[disabled] {
   border: 1px solid #cccccc;
 }
 
-/* line 89, ../lib/stylesheets/patterns/_forms.scss */
+/* line 93, ../lib/stylesheets/patterns/_forms.scss */
 input[type="text"],
 input[type="password"],
-textarea {
+textarea,
+.rs-input {
+  box-sizing: border-box;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15) inset;
   -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15) inset;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15) inset;
 }
-/* line 93, ../lib/stylesheets/patterns/_forms.scss */
+/* line 99, ../lib/stylesheets/patterns/_forms.scss */
 input[type="text"]:focus, input[type="text"].focus,
 input[type="password"]:focus,
 input[type="password"].focus,
 textarea:focus,
-textarea.focus {
+textarea.focus,
+.rs-input:focus,
+.rs-input.focus {
   border-color: rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 0 0 2px #1e6ec1, 0 1px 3px 0 rgba(0, 0, 0, 0.15) inset;
   -moz-box-shadow: 0 0 0 2px #1e6ec1, 0 1px 3px 0 rgba(0, 0, 0, 0.15) inset;
   box-shadow: 0 0 0 2px #1e6ec1, 0 1px 3px 0 rgba(0, 0, 0, 0.15) inset;
 }
 
-/* line 103, ../lib/stylesheets/patterns/_forms.scss */
+/* line 109, ../lib/stylesheets/patterns/_forms.scss */
 select[multiple] {
   height: auto;
 }
 
-/* line 107, ../lib/stylesheets/patterns/_forms.scss */
+/* line 113, ../lib/stylesheets/patterns/_forms.scss */
 textarea {
   min-height: 100px;
 }
 
 /* Input Sizes */
-/* line 112, ../lib/stylesheets/patterns/_forms.scss */
-.rs-input-mini {
+/* line 118, ../lib/stylesheets/patterns/_forms.scss */
+.rs-input-xsmall, .rs-input-mini {
   width: 60px;
 }
 
-/* line 116, ../lib/stylesheets/patterns/_forms.scss */
+/* line 126, ../lib/stylesheets/patterns/_forms.scss */
 .rs-input-small {
   width: 90px;
 }
 
-/* line 120, ../lib/stylesheets/patterns/_forms.scss */
+/* line 130, ../lib/stylesheets/patterns/_forms.scss */
 .rs-input-medium {
   width: 150px;
 }
 
-/* line 124, ../lib/stylesheets/patterns/_forms.scss */
+/* line 134, ../lib/stylesheets/patterns/_forms.scss */
 .rs-input-large {
   width: 210px;
 }
 
-/* line 128, ../lib/stylesheets/patterns/_forms.scss */
+/* line 138, ../lib/stylesheets/patterns/_forms.scss */
 .rs-input-xlarge {
   width: 270px;
 }
 
-/* line 132, ../lib/stylesheets/patterns/_forms.scss */
+/* line 142, ../lib/stylesheets/patterns/_forms.scss */
 .rs-input-xxlarge {
   width: 530px;
 }
 
 /* Checkbox and Radio Groups */
-/* line 138, ../lib/stylesheets/patterns/_forms.scss */
+/* line 148, ../lib/stylesheets/patterns/_forms.scss */
 .rs-checkbox,
 .rs-radio {
   padding-left: 20px;
 }
-/* line 141, ../lib/stylesheets/patterns/_forms.scss */
+/* line 151, ../lib/stylesheets/patterns/_forms.scss */
 .rs-checkbox:after,
 .rs-radio:after {
   content: none;
 }
-/* line 146, ../lib/stylesheets/patterns/_forms.scss */
+/* line 156, ../lib/stylesheets/patterns/_forms.scss */
 .rs-checkbox > input[type="checkbox"], .rs-checkbox > input[type="radio"],
 .rs-radio > input[type="checkbox"],
 .rs-radio > input[type="radio"] {
@@ -2241,7 +2084,7 @@ textarea {
   top: 3px;
 }
 
-/* line 155, ../lib/stylesheets/patterns/_forms.scss */
+/* line 165, ../lib/stylesheets/patterns/_forms.scss */
 .rs-checkbox.inline,
 .rs-radio.inline {
   display: inline-block;
@@ -2249,92 +2092,174 @@ textarea {
 }
 
 /* Create/Horizontal Forms */
-/* line 164, ../lib/stylesheets/patterns/_forms.scss */
+/* line 184, ../lib/stylesheets/patterns/_forms.scss */
 .rs-form-horizontal .rs-control-group,
 .rs-form-horizontal .rs-control-label,
 .rs-form-create .rs-control-group,
 .rs-form-create .rs-control-label {
   margin-bottom: 10px;
 }
-/* line 168, ../lib/stylesheets/patterns/_forms.scss */
+/* line 188, ../lib/stylesheets/patterns/_forms.scss */
 .rs-form-horizontal .rs-control-group,
 .rs-form-create .rs-control-group {
   clear: left;
 }
-/* line 172, ../lib/stylesheets/patterns/_forms.scss */
+/* line 192, ../lib/stylesheets/patterns/_forms.scss */
 .rs-form-horizontal .rs-control-label,
 .rs-form-create .rs-control-label {
   float: left;
-  width: 160px;
   margin-top: 2px;
 }
-/* line 179, ../lib/stylesheets/patterns/_forms.scss */
+/* line 197, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal .rs-controls-static,
+.rs-form-create .rs-controls-static {
+  padding-top: 2px;
+}
+/* line 172, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal .rs-control-label,
+.rs-form-create .rs-control-label {
+  width: 160px;
+}
+/* line 176, ../lib/stylesheets/patterns/_forms.scss */
 .rs-form-horizontal .rs-controls,
 .rs-form-horizontal .rs-controls-static,
 .rs-form-create .rs-controls,
 .rs-form-create .rs-controls-static {
   margin-left: 180px;
 }
-/* line 183, ../lib/stylesheets/patterns/_forms.scss */
-.rs-form-horizontal .rs-controls-static,
-.rs-form-create .rs-controls-static {
-  padding-top: 2px;
-}
-/* line 191, ../lib/stylesheets/patterns/_forms.scss */
+/* line 208, ../lib/stylesheets/patterns/_forms.scss */
 .rs-form-horizontal input[type="text"],
 .rs-form-horizontal input[type="password"],
 .rs-form-horizontal input[type="file"],
 .rs-form-horizontal select,
 .rs-form-horizontal textarea,
+.rs-form-horizontal .rs-input,
 .rs-form-create input[type="text"],
 .rs-form-create input[type="password"],
 .rs-form-create input[type="file"],
 .rs-form-create select,
-.rs-form-create textarea {
+.rs-form-create textarea,
+.rs-form-create .rs-input {
   margin-bottom: 0;
 }
 
+/* line 172, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-xsmall .rs-control-label {
+  width: 60px;
+}
+/* line 176, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-xsmall .rs-controls,
+.rs-form-horizontal.rs-form-xsmall .rs-controls-static {
+  margin-left: 80px;
+}
+/* line 172, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-small .rs-control-label {
+  width: 80px;
+}
+/* line 176, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-small .rs-controls,
+.rs-form-horizontal.rs-form-small .rs-controls-static {
+  margin-left: 100px;
+}
+/* line 172, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-medium .rs-control-label {
+  width: 100px;
+}
+/* line 176, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-medium .rs-controls,
+.rs-form-horizontal.rs-form-medium .rs-controls-static {
+  margin-left: 120px;
+}
+/* line 172, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-large .rs-control-label {
+  width: 120px;
+}
+/* line 176, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-large .rs-controls,
+.rs-form-horizontal.rs-form-large .rs-controls-static {
+  margin-left: 140px;
+}
+/* line 172, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-xlarge .rs-control-label {
+  width: 150px;
+}
+/* line 176, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-xlarge .rs-controls,
+.rs-form-horizontal.rs-form-xlarge .rs-controls-static {
+  margin-left: 170px;
+}
+/* line 172, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-xxlarge .rs-control-label {
+  width: 180px;
+}
+/* line 176, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-horizontal.rs-form-xxlarge .rs-controls,
+.rs-form-horizontal.rs-form-xxlarge .rs-controls-static {
+  margin-left: 200px;
+}
+
 /* Create Forms */
-/* line 198, ../lib/stylesheets/patterns/_forms.scss */
+/* line 242, ../lib/stylesheets/patterns/_forms.scss */
 .rs-form-create label:after {
   content: none;
 }
-/* line 203, ../lib/stylesheets/patterns/_forms.scss */
+/* line 247, ../lib/stylesheets/patterns/_forms.scss */
 .rs-form-create .rs-control-group,
 .rs-form-create .rs-control-label {
   margin-bottom: 20px;
 }
-/* line 207, ../lib/stylesheets/patterns/_forms.scss */
+/* line 251, ../lib/stylesheets/patterns/_forms.scss */
 .rs-form-create .rs-control-label {
   text-align: right;
 }
+/* line 263, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-create .rs-detail-item.error .rs-create-value,
+.rs-form-create .rs-detail-item.error .rs-quiet {
+  color: #c40022;
+}
+/* line 268, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-create .rs-detail-key {
+  color: #333333;
+}
+/* line 273, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-create .rs-detail-value .rs-key-divider {
+  color: #333333;
+}
+/* line 278, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-create .rs-detail-key {
+  width: 160px;
+}
+/* line 281, ../lib/stylesheets/patterns/_forms.scss */
+.rs-form-create .rs-detail-value {
+  margin-left: 180px;
+}
 
 /* Messaging */
-/* line 213, ../lib/stylesheets/patterns/_forms.scss */
+/* line 287, ../lib/stylesheets/patterns/_forms.scss */
 .rs-help-block {
   color: #999999;
 }
 
-/* line 218, ../lib/stylesheets/patterns/_forms.scss */
+/* line 292, ../lib/stylesheets/patterns/_forms.scss */
 .rs-help-inline,
 .rs-validation-inline {
   display: inline-block;
   margin-left: 5px;
 }
 
-/* line 224, ../lib/stylesheets/patterns/_forms.scss */
+/* line 298, ../lib/stylesheets/patterns/_forms.scss */
 .rs-help-block,
 .rs-validation-block {
   display: block;
 }
 
-/* line 229, ../lib/stylesheets/patterns/_forms.scss */
+/* line 303, ../lib/stylesheets/patterns/_forms.scss */
 .rs-validation-inline,
 .rs-validation-block {
   position: relative;
   padding-left: 20px;
 }
-/* line 233, ../lib/stylesheets/patterns/_forms.scss */
+/* line 307, ../lib/stylesheets/patterns/_forms.scss */
 .rs-validation-inline > .rs-validation-indicator,
 .rs-validation-block > .rs-validation-indicator {
   position: absolute;
@@ -2342,13 +2267,14 @@ textarea {
   left: 0;
 }
 
-/* line 242, ../lib/stylesheets/patterns/_forms.scss */
-.rs-control-group.success .rs-validation-inline,
-.rs-control-group.success .rs-validation-block {
+/* line 316, ../lib/stylesheets/patterns/_forms.scss */
+.rs-control-group.success .rs-validation-inline, .rs-form-create .rs-detail-item.success .rs-validation-inline,
+.rs-control-group.success .rs-validation-block,
+.rs-form-create .rs-detail-item.success .rs-validation-block {
   color: #00a96d;
 }
-/* line 246, ../lib/stylesheets/patterns/_forms.scss */
-.rs-control-group.success .rs-validation-indicator {
+/* line 320, ../lib/stylesheets/patterns/_forms.scss */
+.rs-control-group.success .rs-validation-indicator, .rs-form-create .rs-detail-item.success .rs-validation-indicator {
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -2356,61 +2282,89 @@ textarea {
   background-position: 0 -258px;
 }
 
-/* line 256, ../lib/stylesheets/patterns/_forms.scss */
-.rs-control-group.error input[type="text"],
+/* line 331, ../lib/stylesheets/patterns/_forms.scss */
+.rs-control-group.error input[type="text"], .rs-form-create .rs-detail-item.error input[type="text"],
 .rs-control-group.error input[type="password"],
+.rs-form-create .rs-detail-item.error input[type="password"],
 .rs-control-group.error select,
-.rs-control-group.error textarea {
+.rs-form-create .rs-detail-item.error select,
+.rs-control-group.error textarea,
+.rs-form-create .rs-detail-item.error textarea,
+.rs-control-group.error .rs-input,
+.rs-form-create .rs-detail-item.error .rs-input {
   border-color: #c40022;
 }
-/* line 260, ../lib/stylesheets/patterns/_forms.scss */
-.rs-control-group.error input[type="text"]:focus, .rs-control-group.error input[type="text"].focus,
+/* line 335, ../lib/stylesheets/patterns/_forms.scss */
+.rs-control-group.error input[type="text"]:focus, .rs-form-create .rs-detail-item.error input[type="text"]:focus, .rs-control-group.error input[type="text"].focus, .rs-form-create .rs-detail-item.error input[type="text"].focus,
 .rs-control-group.error input[type="password"]:focus,
+.rs-form-create .rs-detail-item.error input[type="password"]:focus,
 .rs-control-group.error input[type="password"].focus,
+.rs-form-create .rs-detail-item.error input[type="password"].focus,
 .rs-control-group.error select:focus,
+.rs-form-create .rs-detail-item.error select:focus,
 .rs-control-group.error select.focus,
+.rs-form-create .rs-detail-item.error select.focus,
 .rs-control-group.error textarea:focus,
-.rs-control-group.error textarea.focus {
+.rs-form-create .rs-detail-item.error textarea:focus,
+.rs-control-group.error textarea.focus,
+.rs-form-create .rs-detail-item.error textarea.focus,
+.rs-control-group.error .rs-input:focus,
+.rs-form-create .rs-detail-item.error .rs-input:focus,
+.rs-control-group.error .rs-input.focus,
+.rs-form-create .rs-detail-item.error .rs-input.focus {
   background-color: #fff6f6;
   -webkit-box-shadow: 0 0 0 2px #c40022;
   -moz-box-shadow: 0 0 0 2px #c40022;
   box-shadow: 0 0 0 2px #c40022;
 }
-/* line 271, ../lib/stylesheets/patterns/_forms.scss */
-.rs-control-group.error input[type="text"]:focus, .rs-control-group.error input[type="text"].focus,
+/* line 347, ../lib/stylesheets/patterns/_forms.scss */
+.rs-control-group.error input[type="text"]:focus, .rs-form-create .rs-detail-item.error input[type="text"]:focus, .rs-control-group.error input[type="text"].focus, .rs-form-create .rs-detail-item.error input[type="text"].focus,
 .rs-control-group.error input[type="password"]:focus,
+.rs-form-create .rs-detail-item.error input[type="password"]:focus,
 .rs-control-group.error input[type="password"].focus,
+.rs-form-create .rs-detail-item.error input[type="password"].focus,
 .rs-control-group.error textarea:focus,
-.rs-control-group.error textarea.focus {
+.rs-form-create .rs-detail-item.error textarea:focus,
+.rs-control-group.error textarea.focus,
+.rs-form-create .rs-detail-item.error textarea.focus,
+.rs-control-group.error .rs-input:focus,
+.rs-form-create .rs-detail-item.error .rs-input:focus,
+.rs-control-group.error .rs-input.focus,
+.rs-form-create .rs-detail-item.error .rs-input.focus {
   border-color: rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 0 0 2px #c40022, 0 1px 3px 0 rgba(0, 0, 0, 0.15) inset;
   -moz-box-shadow: 0 0 0 2px #c40022, 0 1px 3px 0 rgba(0, 0, 0, 0.15) inset;
   box-shadow: 0 0 0 2px #c40022, 0 1px 3px 0 rgba(0, 0, 0, 0.15) inset;
 }
-/* line 283, ../lib/stylesheets/patterns/_forms.scss */
-.rs-control-group.error select:focus, .rs-control-group.error select.focus {
+/* line 359, ../lib/stylesheets/patterns/_forms.scss */
+.rs-control-group.error select:focus, .rs-form-create .rs-detail-item.error select:focus, .rs-control-group.error select.focus, .rs-form-create .rs-detail-item.error select.focus {
   border-color: #999;
 }
-/* line 292, ../lib/stylesheets/patterns/_forms.scss */
-.rs-control-group.error label,
+/* line 368, ../lib/stylesheets/patterns/_forms.scss */
+.rs-control-group.error .rs-controls, .rs-form-create .rs-detail-item.error .rs-controls,
 .rs-control-group.error .rs-help-inline,
+.rs-form-create .rs-detail-item.error .rs-help-inline,
 .rs-control-group.error .rs-help-block,
+.rs-form-create .rs-detail-item.error .rs-help-block,
 .rs-control-group.error .rs-validation-inline,
-.rs-control-group.error .rs-validation-block {
+.rs-form-create .rs-detail-item.error .rs-validation-inline,
+.rs-control-group.error .rs-validation-block,
+.rs-form-create .rs-detail-item.error .rs-validation-block {
   color: #c40022;
 }
-/* line 296, ../lib/stylesheets/patterns/_forms.scss */
-.rs-control-group.error .rs-validation-indicator {
+/* line 372, ../lib/stylesheets/patterns/_forms.scss */
+.rs-control-group.error .rs-validation-indicator, .rs-form-create .rs-detail-item.error .rs-validation-indicator {
   display: inline-block;
   width: 13px;
   height: 12px;
   vertical-align: text-top;
-  background-position: 0 -614px;
+  background-position: 0 -658px;
 }
 
 /* Class-Based Styles */
-/* line 2, ../lib/stylesheets/patterns/_list-table.scss */
-.rs-list-table, table {
+/* line 3, ../lib/stylesheets/patterns/_list-table.scss */
+.rs-list-table,
+table {
   width: 100%;
   margin-bottom: 20px;
   font-size: 13px;
@@ -2420,129 +2374,132 @@ textarea {
   position: relative;
 }
 
-/* line 13, ../lib/stylesheets/patterns/_list-table.scss */
-.rs-table-header, th,
-.rs-table-cell,
-td {
-  border-bottom: 1px solid #eee;
-}
-
-/* line 21, ../lib/stylesheets/patterns/_list-table.scss */
-.rs-select-table .rs-table-row:hover .rs-table-cell, .rs-select-table tr:hover .rs-table-cell, .rs-select-table .rs-table-row:hover td, .rs-select-table tr:hover td, .rs-table-row.hover .rs-table-cell, tr.hover .rs-table-cell, .rs-table-row.hover td, tr.hover td, .rs-table-row.selected .rs-table-cell, tr.selected .rs-table-cell, .rs-table-row.selected td, tr.selected td {
+/* line 18, ../lib/stylesheets/patterns/_list-table.scss */
+.rs-select-table .rs-table-row:hover .rs-table-cell, .rs-select-table .rs-table-row:hover td, .rs-table-row.hover .rs-table-cell, .rs-table-row.hover td, .rs-table-row.selected .rs-table-cell, .rs-table-row.selected td, .rs-select-table
+tr:hover .rs-table-cell, .rs-select-table
+tr:hover td,
+tr.hover .rs-table-cell,
+tr.hover td,
+tr.selected .rs-table-cell,
+tr.selected td {
   background-color: #f1f6ff;
 }
 
-/* line 27, ../lib/stylesheets/patterns/_list-table.scss */
-.rs-table-header, th {
+/* line 25, ../lib/stylesheets/patterns/_list-table.scss */
+.rs-table-header,
+th {
   padding: 0 10px;
   color: #999;
   font-weight: normal;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 31, ../lib/stylesheets/patterns/_list-table.scss */
+.rs-table-header.rs-table-status:before,
+th.rs-table-status:before {
+  content: '\00A0 ';
+  width: 10px;
+  display: block;
 }
 
-/* line 33, ../lib/stylesheets/patterns/_list-table.scss */
-.rs-table-cell, td {
+/* line 39, ../lib/stylesheets/patterns/_list-table.scss */
+.rs-table-cell,
+td {
   padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
 }
 
-/* line 37, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 44, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-text {
   padding: 6px 10px;
 }
 
-/* line 42, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 49, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-link > a {
   display: block;
   margin: -10px;
   padding: 10px;
 }
 
-/* line 49, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 56, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status {
   padding: 0;
   width: 10px;
 }
 
-/* line 55, ../lib/stylesheets/patterns/_list-table.scss */
-.rs-table-header.rs-table-status:before, th.rs-table-status:before {
-  content: '\00A0 ';
-  width: 10px;
-  display: block;
-}
-
-/* line 62, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 61, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-checkbox {
   width: 10px;
 }
 
-/* line 66, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 65, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-radio {
   width: 10px;
 }
 
-/* line 70, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 69, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-cog {
   width: 16px;
 }
 
-/* line 74, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 73, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-delete {
   width: 16px;
 }
 
-/* line 79, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 78, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-input input {
   margin: 0;
 }
 
-/* line 85, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 84, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-select select {
   margin: 0;
 }
 
-/* line 90, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 89, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-ok {
   background-color: #00a96d !important;
 }
-/* line 93, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 92, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-ok.rs-table-status-striped {
   background-image: url("table-status-success.gif");
 }
 
-/* line 99, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 98, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-warning,
 .rs-table-status-processing {
   background-color: #ff9d00 !important;
 }
-/* line 102, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 101, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-warning.rs-table-status-striped,
 .rs-table-status-processing.rs-table-status-striped {
   background-image: url("table-status-warning.gif");
 }
 
-/* line 107, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 106, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-error {
   background-color: #c40022 !important;
 }
 
 /* Table-Based Styles */
 /* Sort Links */
-/* line 129, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 128, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort {
   color: #999999;
 }
-/* line 133, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 132, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort.hover, .rs-table-sort:hover {
   color: #666666;
   text-decoration: none;
 }
 
-/* line 140, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 139, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-text,
 .rs-table-sort-indicator {
   display: inline-block;
 }
 
-/* line 144, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 143, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-indicator {
   width: 9px;
   height: 5px;
@@ -2550,37 +2507,37 @@ td {
   margin-left: 5px;
 }
 
-/* line 152, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 151, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-asc,
 .rs-table-sort-desc {
   color: #333333;
   font-weight: bold;
 }
 
-/* line 157, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 156, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-asc > .rs-table-sort-indicator {
   background-position: 0 -205px;
 }
 
-/* line 162, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 161, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-asc.hover > .rs-table-sort-indicator,
 .rs-table-sort-asc:hover > .rs-table-sort-indicator {
   background-position: 0 -220px;
 }
 
-/* line 166, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 165, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-desc > .rs-table-sort-indicator {
   background-position: 0 -190px;
 }
 
-/* line 171, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 170, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-desc.hover > .rs-table-sort-indicator,
 .rs-table-sort-desc:hover > .rs-table-sort-indicator {
-  background-position: 0 -702px;
+  background-position: 0 -746px;
 }
 
 /* Base Table Overlay */
-/* line 176, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 175, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay {
   display: table;
   width: 100%;
@@ -2588,7 +2545,7 @@ td {
   margin-top: -20px;
 }
 
-/* line 183, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 182, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-content {
   display: table-cell;
   vertical-align: middle;
@@ -2597,12 +2554,12 @@ td {
   text-align: center;
 }
 
-/* line 191, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 190, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-title, .rs-table-overlay-subtitle {
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
 }
 
-/* line 195, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 194, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-title {
   margin-bottom: 5px;
   font-weight: 600;
@@ -2610,29 +2567,29 @@ td {
   color: #666666;
 }
 
-/* line 202, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 201, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-subtitle {
   font-size: 18px;
   color: #999999;
 }
 
-/* line 207, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 206, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-subtitle + .rs-table-overlay-message {
   margin-top: 50px;
 }
 
-/* line 211, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 210, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-message {
   font-size: 13px;
   color: #999999;
 }
 
 /* Loading Overlay */
-/* line 217, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 216, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-loading .rs-table-overlay-message {
   color: #cccccc;
 }
-/* line 219, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 218, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-loading .rs-table-overlay-message:before {
   background: url("clouding.gif") center center no-repeat;
   content: "";
@@ -2644,18 +2601,18 @@ td {
 }
 
 /* Loading Error */
-/* line 231, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 230, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-error .rs-table-overlay-message {
   color: #c40022;
 }
-/* line 234, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 233, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-error .rs-table-overlay-message .rs-icon-error-indicator {
   margin: 1px 5px 0 0;
 }
 
 /* line 1, ../lib/stylesheets/patterns/_embedded-list-table.scss */
 .rs-embedded-list-table-wrapper {
-  border: 1px solid #eee;
+  border: 1px solid #e7e7e7;
   overflow: auto;
 }
 /* line 5, ../lib/stylesheets/patterns/_embedded-list-table.scss */
@@ -2752,16 +2709,16 @@ td {
   margin: 30px;
 }
 /* line 30, ../lib/stylesheets/patterns/_main.scss */
-.rs-sidebar.rs-pull-right, .rs-sidebar.rs-detail-header-actions {
+.rs-sidebar.rs-pull-right {
   width: 280px;
   right: 0;
 }
 /* line 34, ../lib/stylesheets/patterns/_main.scss */
-.rs-sidebar.rs-pull-right .rs-inner, .rs-sidebar.rs-detail-header-actions .rs-inner {
+.rs-sidebar.rs-pull-right .rs-inner {
   margin: 0 0 0 30px;
 }
 /* line 37, ../lib/stylesheets/patterns/_main.scss */
-.rs-panel .rs-sidebar.rs-pull-right .rs-inner, .rs-panel .rs-sidebar.rs-detail-header-actions .rs-inner {
+.rs-panel .rs-sidebar.rs-pull-right .rs-inner {
   margin: 30px;
 }
 
@@ -2791,7 +2748,7 @@ td {
   margin-left: 230px;
 }
 /* line 59, ../lib/stylesheets/patterns/_main.scss */
-.rs-main .rs-sidebar.rs-pull-right + .rs-content, .rs-main .rs-sidebar.rs-detail-header-actions + .rs-content {
+.rs-main .rs-sidebar.rs-pull-right + .rs-content {
   margin-right: 280px;
   margin-left: 0;
 }
@@ -2807,12 +2764,14 @@ td {
   position: relative;
   display: inline-block;
 }
-/* line 6, ../lib/stylesheets/patterns/_menus.scss */
-.rs-dropdown a {
+/* line 8, ../lib/stylesheets/patterns/_menus.scss */
+.rs-dropdown a,
+.rs-dropdown .rs-dropdown-link,
+.rs-dropdown .rs-dropdown-text {
   white-space: nowrap;
 }
 
-/* line 11, ../lib/stylesheets/patterns/_menus.scss */
+/* line 13, ../lib/stylesheets/patterns/_menus.scss */
 .rs-dropdown-menu {
   position: absolute;
   margin: 0;
@@ -2840,17 +2799,18 @@ td {
 .rs-dropdown-menu.visible {
   display: block;
 }
-/* line 25, ../lib/stylesheets/patterns/_menus.scss */
-.rs-dropdown-menu a {
+/* line 28, ../lib/stylesheets/patterns/_menus.scss */
+.rs-dropdown-menu a,
+.rs-dropdown-menu .rs-dropdown-link {
   display: block;
   padding: 0 7px;
 }
-/* line 30, ../lib/stylesheets/patterns/_menus.scss */
-.rs-dropdown-menu.rs-pull-right, .rs-dropdown-menu.rs-detail-header-actions {
+/* line 33, ../lib/stylesheets/patterns/_menus.scss */
+.rs-dropdown-menu.rs-pull-right {
   right: 0;
 }
 
-/* line 35, ../lib/stylesheets/patterns/_menus.scss */
+/* line 38, ../lib/stylesheets/patterns/_menus.scss */
 .rs-dropdown-category {
   display: block;
   margin: 5px 0 0;
@@ -2862,24 +2822,33 @@ td {
   white-space: nowrap;
 }
 
-/* line 46, ../lib/stylesheets/patterns/_menus.scss */
-.rs-dropdown-menu > li:first-child > .rs-dropdown-category {
+/* line 51, ../lib/stylesheets/patterns/_menus.scss */
+.rs-dropdown-item.disabled a,
+.rs-dropdown-item.disabled .rs-dropdown-link {
+  color: #cccccc;
+  cursor: default;
+  text-decoration: none;
+}
+
+/* line 59, ../lib/stylesheets/patterns/_menus.scss */
+.rs-dropdown-menu > li:first-child > .rs-dropdown-category,
+.rs-dropdown-menu > .rs-dropdown-item:first-child > .rs-dropdown-category {
   margin-top: 0;
 }
 
-/* line 50, ../lib/stylesheets/patterns/_menus.scss */
+/* line 63, ../lib/stylesheets/patterns/_menus.scss */
 .rs-dropdown-caption {
   white-space: normal;
 }
 
-/* line 55, ../lib/stylesheets/patterns/_menus.scss */
+/* line 68, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-icon-external,
 .rs-utility-dropdown .rs-icon-external-dark {
   margin-top: 1px;
 }
 
 /** Primary Menu **/
-/* line 61, ../lib/stylesheets/patterns/_menus.scss */
+/* line 74, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-dropdown-menu {
   padding: 0 0 10px;
   border: 0;
@@ -2896,8 +2865,9 @@ td {
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 70, ../lib/stylesheets/patterns/_menus.scss */
-.rs-primary-dropdown .rs-dropdown-menu a {
+/* line 84, ../lib/stylesheets/patterns/_menus.scss */
+.rs-primary-dropdown .rs-dropdown-menu a,
+.rs-primary-dropdown .rs-dropdown-menu .rs-dropdown-link {
   padding: 2px 15px;
   color: #333;
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
@@ -2905,28 +2875,32 @@ td {
   font-weight: 600;
   text-decoration: none;
 }
-/* line 79, ../lib/stylesheets/patterns/_menus.scss */
-.rs-primary-dropdown .rs-dropdown-menu a:hover, .rs-primary-dropdown .rs-dropdown-menu a.hover {
+/* line 93, ../lib/stylesheets/patterns/_menus.scss */
+.rs-primary-dropdown .rs-dropdown-menu a:hover, .rs-primary-dropdown .rs-dropdown-menu a.hover,
+.rs-primary-dropdown .rs-dropdown-menu .rs-dropdown-link:hover,
+.rs-primary-dropdown .rs-dropdown-menu .rs-dropdown-link.hover {
   color: #c40022;
   background-color: #f5f5f5;
 }
-/* line 85, ../lib/stylesheets/patterns/_menus.scss */
-.rs-primary-dropdown .rs-dropdown-menu > li:first-child {
+/* line 100, ../lib/stylesheets/patterns/_menus.scss */
+.rs-primary-dropdown .rs-dropdown-menu > li:first-child,
+.rs-primary-dropdown .rs-dropdown-menu > .rs-dropdown-item:first-child {
   margin-top: 12px;
 }
-/* line 90, ../lib/stylesheets/patterns/_menus.scss */
+/* line 105, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-dropdown-category {
   padding: 0 15px;
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
   font-size: 12px;
   font-weight: 200;
 }
-/* line 98, ../lib/stylesheets/patterns/_menus.scss */
+/* line 114, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-dropdown-category,
-.rs-primary-dropdown .rs-dropdown-menu > li:first-child > .rs-dropdown-category {
+.rs-primary-dropdown .rs-dropdown-menu > li:first-child > .rs-dropdown-category,
+.rs-primary-dropdown .rs-dropdown-menu > .rs-dropdown-item:first-child > .rs-dropdown-category {
   margin: 12px 0 0;
 }
-/* line 102, ../lib/stylesheets/patterns/_menus.scss */
+/* line 118, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-dropdown-caption {
   display: block;
   color: #999999;
@@ -2934,13 +2908,23 @@ td {
   font-size: 12px;
   font-weight: 200;
 }
-/* line 110, ../lib/stylesheets/patterns/_menus.scss */
+/* line 126, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-icon-external {
   background-position: 0 -484px;
 }
+/* line 132, ../lib/stylesheets/patterns/_menus.scss */
+.rs-primary-dropdown .rs-dropdown-item.disabled a,
+.rs-primary-dropdown .rs-dropdown-item.disabled .rs-dropdown-link {
+  color: #999999;
+  background-color: transparent;
+}
+/* line 137, ../lib/stylesheets/patterns/_menus.scss */
+.rs-primary-dropdown .rs-dropdown-item.disabled .rs-dropdown-caption {
+  color: #999999;
+}
 
 /** Utility Menu **/
-/* line 118, ../lib/stylesheets/patterns/_menus.scss */
+/* line 146, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-menu {
   border-top: none;
   background: #333;
@@ -2949,33 +2933,40 @@ td {
   font-smoothing: antialiased;
   padding: 8px 0;
 }
-/* line 126, ../lib/stylesheets/patterns/_menus.scss */
-.rs-utility-dropdown .rs-dropdown-menu span {
+/* line 155, ../lib/stylesheets/patterns/_menus.scss */
+.rs-utility-dropdown .rs-dropdown-menu span,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-text {
   color: #ccc;
   padding: 2px 15px;
   text-decoration: none;
 }
-/* line 132, ../lib/stylesheets/patterns/_menus.scss */
-.rs-utility-dropdown .rs-dropdown-menu a {
+/* line 162, ../lib/stylesheets/patterns/_menus.scss */
+.rs-utility-dropdown .rs-dropdown-menu a,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link {
   color: #ccc;
   padding: 2px 15px;
   text-decoration: none;
 }
-/* line 137, ../lib/stylesheets/patterns/_menus.scss */
-.rs-utility-dropdown .rs-dropdown-menu a .rs-icon-external-dark {
+/* line 167, ../lib/stylesheets/patterns/_menus.scss */
+.rs-utility-dropdown .rs-dropdown-menu a .rs-icon-external-dark,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link .rs-icon-external-dark {
   visibility: hidden;
 }
-/* line 142, ../lib/stylesheets/patterns/_menus.scss */
-.rs-utility-dropdown .rs-dropdown-menu a:hover, .rs-utility-dropdown .rs-dropdown-menu a.hover {
+/* line 172, ../lib/stylesheets/patterns/_menus.scss */
+.rs-utility-dropdown .rs-dropdown-menu a:hover, .rs-utility-dropdown .rs-dropdown-menu a.hover,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link:hover,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.hover {
   color: #fff;
   background-color: #444;
 }
-/* line 146, ../lib/stylesheets/patterns/_menus.scss */
-.rs-utility-dropdown .rs-dropdown-menu a:hover .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a.hover .rs-icon-external-dark {
+/* line 176, ../lib/stylesheets/patterns/_menus.scss */
+.rs-utility-dropdown .rs-dropdown-menu a:hover .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a.hover .rs-icon-external-dark,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link:hover .rs-icon-external-dark,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.hover .rs-icon-external-dark {
   visibility: visible;
   background-position: 0 -569px;
 }
-/* line 154, ../lib/stylesheets/patterns/_menus.scss */
+/* line 184, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-caption {
   display: block;
   color: #999999;
@@ -2983,7 +2974,7 @@ td {
   font-size: 12px;
   padding: 0;
 }
-/* line 163, ../lib/stylesheets/patterns/_menus.scss */
+/* line 193, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-divider {
   padding: 0;
   margin: 7px 0 8px;
@@ -2991,7 +2982,7 @@ td {
   background: #000;
   border-bottom: 1px solid #434343;
 }
-/* line 171, ../lib/stylesheets/patterns/_menus.scss */
+/* line 201, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-category {
   margin: 7px 0 0;
   padding: 0 15px;
@@ -2999,46 +2990,48 @@ td {
   font-size: 12px;
   font-weight: 200;
 }
+/* line 211, ../lib/stylesheets/patterns/_menus.scss */
+.rs-utility-dropdown .rs-dropdown-item.disabled a,
+.rs-utility-dropdown .rs-dropdown-item.disabled .rs-dropdown-link {
+  color: #666666;
+  background-color: transparent;
+}
+/* line 216, ../lib/stylesheets/patterns/_menus.scss */
+.rs-utility-dropdown .rs-dropdown-item.disabled .rs-dropdown-caption {
+  color: #666666;
+}
 
 /* line 1, ../lib/stylesheets/patterns/_nav-base.scss */
-.rs-nav, .rs-footer .rs-links,
-.rs-nav-footer .rs-links {
+.rs-nav {
   list-style: none;
   margin: 0;
 }
 /* line 4, ../lib/stylesheets/_mixins.scss */
-.rs-nav:before, .rs-footer .rs-links:before,
-.rs-nav-footer .rs-links:before, .rs-nav:after, .rs-footer .rs-links:after,
-.rs-nav-footer .rs-links:after {
+.rs-nav:before, .rs-nav:after {
   content: "";
   display: table;
 }
 /* line 7, ../lib/stylesheets/_mixins.scss */
-.rs-nav:after, .rs-footer .rs-links:after,
-.rs-nav-footer .rs-links:after {
+.rs-nav:after {
   clear: both;
 }
 /* line 11, ../lib/stylesheets/_mixins.scss */
-.rs-nav, .rs-footer .rs-links,
-.rs-nav-footer .rs-links {
+.rs-nav {
   zoom: 1;
 }
 
 /* line 7, ../lib/stylesheets/patterns/_nav-base.scss */
-.rs-nav-item, .rs-footer .rs-link,
-.rs-nav-footer .rs-link, .rs-footer .rs-links > li,
-.rs-nav-footer .rs-links > li, .rs-nav > li {
+.rs-nav-item, .rs-nav > li {
   float: left;
 }
 
 /* line 11, ../lib/stylesheets/patterns/_nav-base.scss */
-.rs-nav-link, .rs-nav > li > a, .rs-footer .rs-links > li > a,
-.rs-nav-footer .rs-links > li > a {
+.rs-nav-link, .rs-nav > li > a {
+  cursor: pointer;
   display: block;
 }
-/* line 14, ../lib/stylesheets/patterns/_nav-base.scss */
-.rs-nav-link:hover, .rs-nav > li > a:hover, .rs-footer .rs-links > li > a:hover,
-.rs-nav-footer .rs-links > li > a:hover {
+/* line 15, ../lib/stylesheets/patterns/_nav-base.scss */
+.rs-nav-link:hover, .rs-nav > li > a:hover {
   text-decoration: none;
 }
 
@@ -3050,17 +3043,13 @@ td {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8BAMAAADI0sRBAAAAJ1BMVEXr6+vq6urs7Ozp6ent7e3u7u7o6Ojv7+/n5+fw8PDm5ubl5eXx8fETrQmTAAAFhElEQVR4Xi3VTXPjSB0G8H+3XhyYS7dkOZlZDuqW5JjiIqllO9wkuZ0MnGTLNjvsxW/Rbm1xsJ23KYpDHGcWFycyBVSF4hCWYmvZI8UH4MjHol27p9+x357n3yCWtM21tZDDeo3Hk2EA0BtMhrxQNAiwuZR2zbuLmf0ALTR45izN0eD1RwWrgYlEc+sCZWQW83PUaJTtHw9RY3apYFMY+VKIRhPqj9zmFr58T2mb4ctfbRU2AhLKEIud+EXuF6B7V7fdu7TjXXUXimkIeAzu+Q5RSpx72h5ingdDV+Er0BVAJnF+wp999EbtXjgWwelCOAOmiLoQWePL08AHqqeSug6gAvC5A+Ao5h2Yu9X6VaOsEozD8ejr8kOS1fWvy7NSkU0AJXSBiAGaAJPeoNXO4icuWh1FiiMHQpv3ehu0dx9RyfloHtVW8WQ094hiQYBhmg2Tz+Uv20PBcZXw5hyTKsm5Qoug3aj0ZXsNn858VNHgy0VUjzrBl98IxaUF3o57QbriS8Od7k0N34h4wDR8WipOHJAN6s7sB6phbSJ7um9iPqW6n04VdArIr65XUwZR3OrdmW/etqlF2Ju3u4Gi7oD7/RXIeSdD4/s8yR/cv4V5IluKGgfkUCeun9F2Ku1KRzX/t3/XG6i2uVAsNIjfVfC2uhSpyQZiyDt1i5sF78wyBUbwFldPUTga97014buUxcs+Ok6Z3VRsNIia4tcvjAqqXX0hd14wszu54wUTqhilsCqf+xUBTlve7s6XyDu7fyklsoQi1oFL7s5feXuIDS5do1dEzsnW6LU1BfkRWENqJBcMwMo59Zt2jTnrfzTtcKMIE7CodHpTChf2MoMPXf570Enc5a2VIsBAV8I+ywyZmSiuVKItqhLtAvo+2ODey26OjyhJgwx+ZxyF9V4ExtEOKcACcf+dEeszql9EMWAjzbTotW+kOlFkHrhDnsOoDdFgT+DPPsv+i9qFz+o/UUAT0Bf8qVXTqgFimkiQXM9O4iWSFw1FakLQkkm1dypU50xMy5PPXTzvlSdfbRSxDek/ZZYw9IwN8ukznhWeUUydWYFDxciCcMOblRFVx31iy0ZIoQARhpQYCjCB6c+1zKZ8MtwMJSJSzyxUEJlKBSBgD3e4yELKwCnGVL77lzFuuvLdX/+o0N7AA94fRgJNc7KR8ZHezV13e6T3rhVUh57Of0hlZvIzIo5S7GEiwkcFi+Dhid+vOgOwiEigfjhuMzUvGrOdYkEgNOk34FpAyv8Z8JquIqEeiK40WzHKwAM+WnpWFZfHXoVvyU85G352S/BHxb89EOk+/bldCr9lTkQzcfmH8hNIXNxSGAWADoBRCIgQ57s0S2paGC6zJF0duIbmk7CNfp93Kd5JfMgv3Wh2c1koxCk0NSCPzXjsM35M/ZRmlHStlNYPBCPQG0LLtVPZQPoAet/GXmMWjL6NeaTId/Cbm/Fj4VjccPhNdUvcPq1XjLj6QPHJBCx+Z+f1gFq4r3PNyf/jhRZ28p/lCvcWElv8wao/7TdWmXPnPC3i4C9wnhqaQv8KDBACzOPxDyNrW+g9q+VuHVA8MNgSWIKnj1HADCE3BCyfMwVSWDkgDaqPTxnQBdLGEZ0JLTEGdGaHBzR4nwm6BhOs9qtcGMTnroFuiJ9zReEDJWIdjDZ7CkvgYV+tQUrZR9ZQoZp5I/iAbSfCW2BvnK1DfYrqeB3CuYIjcBmIxuJ8Ly7qZJ85SMjepOkgO1Es7+H+ZawqRuShYvxQMfrat9KMRApvC6od3J6W9FALGdvc4qd2bnN2gOXAr0F3gs/4adfa0OSlN+wsatlLr+0prDEkf+J+AblQX9A1dDSEMxL7GiK+Iu3DKBTER4japi3p7DB9mYbdGT070P4/JfNcAmbpnUoAAAAASUVORK5CYII=);
 }
 /* line 6, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav, .rs-nav-primary .rs-footer .rs-links, .rs-footer .rs-nav-primary .rs-links,
-.rs-nav-primary .rs-nav-footer .rs-links,
-.rs-nav-footer .rs-nav-primary .rs-links {
+.rs-nav-primary .rs-nav {
   box-shadow: inset 0 -1px 0 0 #dddddd;
   border-bottom: 1px solid whitesmoke;
   padding: 30px 0 10px 0;
 }
 /* line 11, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-link, .rs-nav-primary .rs-nav > li > a, .rs-nav-primary .rs-footer .rs-links > li > a, .rs-footer .rs-nav-primary .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li > a {
+.rs-nav-primary .rs-nav-link, .rs-nav-primary .rs-nav > li > a {
   line-height: 1em;
   padding: 8px 0 2px 0;
   color: #888888;
@@ -3093,344 +3082,64 @@ td {
   top: -14px;
 }
 /* line 44, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item, .rs-nav-primary .rs-footer .rs-link, .rs-footer .rs-nav-primary .rs-link,
-.rs-nav-primary .rs-nav-footer .rs-link,
-.rs-nav-footer .rs-nav-primary .rs-link, .rs-nav-primary .rs-footer .rs-links > li, .rs-footer .rs-nav-primary .rs-links > li,
-.rs-nav-primary .rs-nav-footer .rs-links > li,
-.rs-nav-footer .rs-nav-primary .rs-links > li, .rs-nav-primary .rs-nav > li {
+.rs-nav-primary .rs-nav-item, .rs-nav-primary .rs-nav > li {
   margin: 0 20px;
   border: 1px solid transparent;
 }
 /* line 52, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item:hover > a, .rs-nav-primary .rs-footer .rs-link:hover > a, .rs-footer .rs-nav-primary .rs-link:hover > a,
-.rs-nav-primary .rs-nav-footer .rs-link:hover > a,
-.rs-nav-footer .rs-nav-primary .rs-link:hover > a, .rs-nav-primary .rs-footer .rs-links > li:hover > a, .rs-footer .rs-nav-primary .rs-links > li:hover > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li:hover > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li:hover > a, .rs-nav-primary .rs-nav > li:hover > a,
+.rs-nav-primary .rs-nav-item:hover > a, .rs-nav-primary .rs-nav > li:hover > a,
 .rs-nav-primary .rs-nav-item:hover .rs-nav-link,
-.rs-nav-primary .rs-footer .rs-link:hover .rs-nav-link,
-.rs-footer .rs-nav-primary .rs-link:hover .rs-nav-link,
-.rs-nav-primary .rs-nav-footer .rs-link:hover .rs-nav-link,
-.rs-nav-footer .rs-nav-primary .rs-link:hover .rs-nav-link,
-.rs-nav-primary .rs-footer .rs-links > li:hover .rs-nav-link,
-.rs-footer .rs-nav-primary .rs-links > li:hover .rs-nav-link,
-.rs-nav-primary .rs-nav-footer .rs-links > li:hover .rs-nav-link,
-.rs-nav-footer .rs-nav-primary .rs-links > li:hover .rs-nav-link,
 .rs-nav-primary .rs-nav > li:hover .rs-nav-link,
 .rs-nav-primary .rs-nav-item:hover .rs-nav > li > a,
-.rs-nav-primary .rs-footer .rs-link:hover .rs-nav > li > a,
-.rs-footer .rs-nav-primary .rs-link:hover .rs-nav > li > a,
-.rs-nav-primary .rs-nav-footer .rs-link:hover .rs-nav > li > a,
-.rs-nav-footer .rs-nav-primary .rs-link:hover .rs-nav > li > a,
-.rs-nav-primary .rs-footer .rs-links > li:hover .rs-nav > li > a,
-.rs-footer .rs-nav-primary .rs-links > li:hover .rs-nav > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li:hover .rs-nav > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li:hover .rs-nav > li > a,
-.rs-nav-primary .rs-nav > li:hover .rs-nav > li > a,
-.rs-nav-primary .rs-nav-item:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-item:hover .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-link:hover .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-link:hover .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-link:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-footer .rs-link:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-link:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-primary .rs-link:hover .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-links > li:hover .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-links > li:hover .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-footer .rs-links > li:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-primary .rs-links > li:hover .rs-links > li > a,
-.rs-nav-primary .rs-nav > li:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav > li:hover .rs-links > li > a,
-.rs-nav-primary .rs-nav-item:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-nav-item:hover .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-link:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-footer .rs-link:hover .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-link:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-primary .rs-link:hover .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-link:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-link:hover .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-links > li:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-footer .rs-links > li:hover .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-links > li:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-primary .rs-links > li:hover .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li:hover .rs-links > li > a,
-.rs-nav-primary .rs-nav > li:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-nav > li:hover .rs-links > li > a, .rs-nav-primary .rs-nav-item.hover > a, .rs-nav-primary .rs-footer .hover.rs-link > a, .rs-footer .rs-nav-primary .hover.rs-link > a,
-.rs-nav-primary .rs-nav-footer .hover.rs-link > a,
-.rs-nav-footer .rs-nav-primary .hover.rs-link > a, .rs-nav-primary .rs-footer .rs-links > li.hover > a, .rs-footer .rs-nav-primary .rs-links > li.hover > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.hover > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.hover > a, .rs-nav-primary .rs-nav > li.hover > a,
+.rs-nav-primary .rs-nav > li:hover .rs-nav > li > a, .rs-nav-primary .rs-nav-item.hover > a, .rs-nav-primary .rs-nav > li.hover > a,
 .rs-nav-primary .rs-nav-item.hover .rs-nav-link,
-.rs-nav-primary .rs-footer .hover.rs-link .rs-nav-link,
-.rs-footer .rs-nav-primary .hover.rs-link .rs-nav-link,
-.rs-nav-primary .rs-nav-footer .hover.rs-link .rs-nav-link,
-.rs-nav-footer .rs-nav-primary .hover.rs-link .rs-nav-link,
-.rs-nav-primary .rs-footer .rs-links > li.hover .rs-nav-link,
-.rs-footer .rs-nav-primary .rs-links > li.hover .rs-nav-link,
-.rs-nav-primary .rs-nav-footer .rs-links > li.hover .rs-nav-link,
-.rs-nav-footer .rs-nav-primary .rs-links > li.hover .rs-nav-link,
 .rs-nav-primary .rs-nav > li.hover .rs-nav-link,
 .rs-nav-primary .rs-nav-item.hover .rs-nav > li > a,
-.rs-nav-primary .rs-footer .hover.rs-link .rs-nav > li > a,
-.rs-footer .rs-nav-primary .hover.rs-link .rs-nav > li > a,
-.rs-nav-primary .rs-nav-footer .hover.rs-link .rs-nav > li > a,
-.rs-nav-footer .rs-nav-primary .hover.rs-link .rs-nav > li > a,
-.rs-nav-primary .rs-footer .rs-links > li.hover .rs-nav > li > a,
-.rs-footer .rs-nav-primary .rs-links > li.hover .rs-nav > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.hover .rs-nav > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.hover .rs-nav > li > a,
-.rs-nav-primary .rs-nav > li.hover .rs-nav > li > a,
-.rs-nav-primary .rs-nav-item.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-item.hover .rs-links > li > a,
-.rs-nav-primary .rs-footer .hover.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-primary .hover.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .hover.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-footer .hover.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .hover.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-primary .hover.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-links > li.hover .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-links > li.hover .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-footer .rs-links > li.hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-primary .rs-links > li.hover .rs-links > li > a,
-.rs-nav-primary .rs-nav > li.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav > li.hover .rs-links > li > a,
-.rs-nav-primary .rs-nav-item.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-nav-item.hover .rs-links > li > a,
-.rs-nav-primary .rs-footer .hover.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-footer .hover.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-primary .hover.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-primary .hover.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .hover.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .hover.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-links > li.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-footer .rs-links > li.hover .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-links > li.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-primary .rs-links > li.hover .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.hover .rs-links > li > a,
-.rs-nav-primary .rs-nav > li.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-nav > li.hover .rs-links > li > a, .rs-nav-primary .rs-nav-item.active > a, .rs-nav-primary .rs-footer .active.rs-link > a, .rs-footer .rs-nav-primary .active.rs-link > a,
-.rs-nav-primary .rs-nav-footer .active.rs-link > a,
-.rs-nav-footer .rs-nav-primary .active.rs-link > a, .rs-nav-primary .rs-footer .rs-links > li.active > a, .rs-footer .rs-nav-primary .rs-links > li.active > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.active > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.active > a, .rs-nav-primary .rs-nav > li.active > a,
+.rs-nav-primary .rs-nav > li.hover .rs-nav > li > a, .rs-nav-primary .rs-nav-item.active > a, .rs-nav-primary .rs-nav > li.active > a,
 .rs-nav-primary .rs-nav-item.active .rs-nav-link,
-.rs-nav-primary .rs-footer .active.rs-link .rs-nav-link,
-.rs-footer .rs-nav-primary .active.rs-link .rs-nav-link,
-.rs-nav-primary .rs-nav-footer .active.rs-link .rs-nav-link,
-.rs-nav-footer .rs-nav-primary .active.rs-link .rs-nav-link,
-.rs-nav-primary .rs-footer .rs-links > li.active .rs-nav-link,
-.rs-footer .rs-nav-primary .rs-links > li.active .rs-nav-link,
-.rs-nav-primary .rs-nav-footer .rs-links > li.active .rs-nav-link,
-.rs-nav-footer .rs-nav-primary .rs-links > li.active .rs-nav-link,
 .rs-nav-primary .rs-nav > li.active .rs-nav-link,
 .rs-nav-primary .rs-nav-item.active .rs-nav > li > a,
-.rs-nav-primary .rs-footer .active.rs-link .rs-nav > li > a,
-.rs-footer .rs-nav-primary .active.rs-link .rs-nav > li > a,
-.rs-nav-primary .rs-nav-footer .active.rs-link .rs-nav > li > a,
-.rs-nav-footer .rs-nav-primary .active.rs-link .rs-nav > li > a,
-.rs-nav-primary .rs-footer .rs-links > li.active .rs-nav > li > a,
-.rs-footer .rs-nav-primary .rs-links > li.active .rs-nav > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.active .rs-nav > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.active .rs-nav > li > a,
-.rs-nav-primary .rs-nav > li.active .rs-nav > li > a,
-.rs-nav-primary .rs-nav-item.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-item.active .rs-links > li > a,
-.rs-nav-primary .rs-footer .active.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-primary .active.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .active.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-footer .active.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .active.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-primary .active.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-links > li.active .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-links > li.active .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-footer .rs-links > li.active .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-primary .rs-links > li.active .rs-links > li > a,
-.rs-nav-primary .rs-nav > li.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav > li.active .rs-links > li > a,
-.rs-nav-primary .rs-nav-item.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-nav-item.active .rs-links > li > a,
-.rs-nav-primary .rs-footer .active.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-footer .active.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-primary .active.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-primary .active.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .active.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .active.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-links > li.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-footer .rs-links > li.active .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-links > li.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-primary .rs-links > li.active .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.active .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.active .rs-links > li > a,
-.rs-nav-primary .rs-nav > li.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-nav > li.active .rs-links > li > a {
+.rs-nav-primary .rs-nav > li.active .rs-nav > li > a {
   color: #333333;
   border-bottom: 2px solid #c40022;
 }
 /* line 60, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.disabled > a, .rs-nav-primary .rs-footer .disabled.rs-link > a, .rs-footer .rs-nav-primary .disabled.rs-link > a,
-.rs-nav-primary .rs-nav-footer .disabled.rs-link > a,
-.rs-nav-footer .rs-nav-primary .disabled.rs-link > a, .rs-nav-primary .rs-footer .rs-links > li.disabled > a, .rs-footer .rs-nav-primary .rs-links > li.disabled > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.disabled > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.disabled > a, .rs-nav-primary .rs-nav > li.disabled > a,
+.rs-nav-primary .rs-nav-item.disabled > a, .rs-nav-primary .rs-nav > li.disabled > a,
 .rs-nav-primary .rs-nav-item.disabled .rs-nav-link,
-.rs-nav-primary .rs-footer .disabled.rs-link .rs-nav-link,
-.rs-footer .rs-nav-primary .disabled.rs-link .rs-nav-link,
-.rs-nav-primary .rs-nav-footer .disabled.rs-link .rs-nav-link,
-.rs-nav-footer .rs-nav-primary .disabled.rs-link .rs-nav-link,
-.rs-nav-primary .rs-footer .rs-links > li.disabled .rs-nav-link,
-.rs-footer .rs-nav-primary .rs-links > li.disabled .rs-nav-link,
-.rs-nav-primary .rs-nav-footer .rs-links > li.disabled .rs-nav-link,
-.rs-nav-footer .rs-nav-primary .rs-links > li.disabled .rs-nav-link,
 .rs-nav-primary .rs-nav > li.disabled .rs-nav-link,
 .rs-nav-primary .rs-nav-item.disabled .rs-nav > li > a,
-.rs-nav-primary .rs-footer .disabled.rs-link .rs-nav > li > a,
-.rs-footer .rs-nav-primary .disabled.rs-link .rs-nav > li > a,
-.rs-nav-primary .rs-nav-footer .disabled.rs-link .rs-nav > li > a,
-.rs-nav-footer .rs-nav-primary .disabled.rs-link .rs-nav > li > a,
-.rs-nav-primary .rs-footer .rs-links > li.disabled .rs-nav > li > a,
-.rs-footer .rs-nav-primary .rs-links > li.disabled .rs-nav > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.disabled .rs-nav > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.disabled .rs-nav > li > a,
-.rs-nav-primary .rs-nav > li.disabled .rs-nav > li > a,
-.rs-nav-primary .rs-nav-item.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-item.disabled .rs-links > li > a,
-.rs-nav-primary .rs-footer .disabled.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-primary .disabled.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .disabled.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-footer .disabled.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .disabled.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-primary .disabled.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-primary .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-primary .rs-nav > li.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav > li.disabled .rs-links > li > a,
-.rs-nav-primary .rs-nav-item.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-nav-item.disabled .rs-links > li > a,
-.rs-nav-primary .rs-footer .disabled.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-footer .disabled.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-primary .disabled.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-primary .disabled.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .disabled.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .disabled.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-links > li.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-links > li.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-primary .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-primary .rs-nav > li.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-nav > li.disabled .rs-links > li > a {
+.rs-nav-primary .rs-nav > li.disabled .rs-nav > li > a {
   color: #bbb;
   cursor: default;
   border-bottom: none;
   text-shadow: 0 1px #f5f5f5;
 }
 /* line 68, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.rs-dropdown, .rs-nav-primary .rs-footer .rs-dropdown.rs-link, .rs-footer .rs-nav-primary .rs-dropdown.rs-link,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.rs-link,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.rs-link, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown, .rs-nav-primary .rs-nav > li.rs-dropdown {
+.rs-nav-primary .rs-nav-item.rs-dropdown, .rs-nav-primary .rs-nav > li.rs-dropdown {
   margin-right: 46px;
 }
 /* line 71, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.rs-dropdown .rs-dropdown-menu, .rs-nav-primary .rs-footer .rs-dropdown.rs-link .rs-dropdown-menu, .rs-footer .rs-nav-primary .rs-dropdown.rs-link .rs-dropdown-menu,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.rs-link .rs-dropdown-menu,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.rs-link .rs-dropdown-menu, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown .rs-dropdown-menu, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown .rs-dropdown-menu,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown .rs-dropdown-menu,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown .rs-dropdown-menu, .rs-nav-primary .rs-nav > li.rs-dropdown .rs-dropdown-menu {
+.rs-nav-primary .rs-nav-item.rs-dropdown .rs-dropdown-menu, .rs-nav-primary .rs-nav > li.rs-dropdown .rs-dropdown-menu {
   margin-top: -2px;
 }
 /* line 75, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.rs-dropdown.active, .rs-nav-primary .rs-footer .rs-dropdown.active.rs-link, .rs-footer .rs-nav-primary .rs-dropdown.active.rs-link,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.active.rs-link,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.active.rs-link, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.active, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.active,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.active,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.active, .rs-nav-primary .rs-nav > li.rs-dropdown.active {
+.rs-nav-primary .rs-nav-item.rs-dropdown.active, .rs-nav-primary .rs-nav > li.rs-dropdown.active {
   margin-right: 20px;
 }
 /* line 79, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-primary .rs-footer .rs-dropdown.active.rs-link .rs-caret, .rs-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-caret,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.active.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-caret, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.active .rs-caret, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-caret,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.active .rs-caret,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-caret {
+.rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-caret {
   right: 1px;
 }
 /* line 83, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.rs-dropdown.active > a, .rs-nav-primary .rs-footer .rs-dropdown.active.rs-link > a, .rs-footer .rs-nav-primary .rs-dropdown.active.rs-link > a,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.active.rs-link > a,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.active.rs-link > a, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.active > a, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.active > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.active > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.active > a, .rs-nav-primary .rs-nav > li.rs-dropdown.active > a, .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-nav-link, .rs-nav-primary .rs-footer .rs-dropdown.active.rs-link .rs-nav-link, .rs-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-nav-link,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.active.rs-link .rs-nav-link,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-nav-link, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.active .rs-nav-link, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-nav-link,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.active .rs-nav-link,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-nav-link, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-nav-link, .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-nav > li > a, .rs-nav-primary .rs-footer .rs-dropdown.active.rs-link .rs-nav > li > a, .rs-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-nav > li > a,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.active.rs-link .rs-nav > li > a,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-nav > li > a, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.active .rs-nav > li > a, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-nav > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.active .rs-nav > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-nav > li > a, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-nav > li > a, .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-footer .rs-links > li > a, .rs-footer .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-links > li > a, .rs-nav-primary .rs-footer .rs-dropdown.active.rs-link .rs-links > li > a, .rs-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.active.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-footer .rs-dropdown.active.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-links > li > a, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.active .rs-links > li > a, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.active .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-links > li > a, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-footer .rs-links > li > a, .rs-footer .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-links > li > a,
-.rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-dropdown.active.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-footer .rs-dropdown.active.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.active.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-links > li > a,
-.rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.active .rs-links > li > a,
-.rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-links > li > a,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.active .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-links > li > a,
-.rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-links > li > a {
+.rs-nav-primary .rs-nav-item.rs-dropdown.active > a, .rs-nav-primary .rs-nav > li.rs-dropdown.active > a, .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-nav-link, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-nav-link, .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-nav > li > a, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-nav > li > a {
   padding-right: 26px;
 }
 /* line 91, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.rs-dropdown:hover .rs-caret, .rs-nav-primary .rs-footer .rs-dropdown.rs-link:hover .rs-caret, .rs-footer .rs-nav-primary .rs-dropdown.rs-link:hover .rs-caret,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.rs-link:hover .rs-caret,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.rs-link:hover .rs-caret, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown:hover .rs-caret, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown:hover .rs-caret,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown:hover .rs-caret,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown:hover .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown:hover .rs-caret, .rs-nav-primary .rs-nav-item.rs-dropdown.hover .rs-caret, .rs-nav-primary .rs-footer .rs-dropdown.hover.rs-link .rs-caret, .rs-footer .rs-nav-primary .rs-dropdown.hover.rs-link .rs-caret,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.hover.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.hover.rs-link .rs-caret, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.hover .rs-caret, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.hover .rs-caret,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.hover .rs-caret,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.hover .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.hover .rs-caret, .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-primary .rs-footer .rs-dropdown.active.rs-link .rs-caret, .rs-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-caret,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.active.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.active.rs-link .rs-caret, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.active .rs-caret, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-caret,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.active .rs-caret,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.active .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-caret {
+.rs-nav-primary .rs-nav-item.rs-dropdown:hover .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown:hover .rs-caret, .rs-nav-primary .rs-nav-item.rs-dropdown.hover .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.hover .rs-caret, .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-caret {
   background-position: 16px -297px;
 }
 /* line 97, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.rs-dropdown.disabled .rs-caret, .rs-nav-primary .rs-footer .rs-dropdown.disabled.rs-link .rs-caret, .rs-footer .rs-nav-primary .rs-dropdown.disabled.rs-link .rs-caret,
-.rs-nav-primary .rs-nav-footer .rs-dropdown.disabled.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-primary .rs-dropdown.disabled.rs-link .rs-caret, .rs-nav-primary .rs-footer .rs-links > li.rs-dropdown.disabled .rs-caret, .rs-footer .rs-nav-primary .rs-links > li.rs-dropdown.disabled .rs-caret,
-.rs-nav-primary .rs-nav-footer .rs-links > li.rs-dropdown.disabled .rs-caret,
-.rs-nav-footer .rs-nav-primary .rs-links > li.rs-dropdown.disabled .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.disabled .rs-caret {
+.rs-nav-primary .rs-nav-item.rs-dropdown.disabled .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.disabled .rs-caret {
   display: none;
 }
 
@@ -3447,8 +3156,7 @@ td {
   display: block;
 }
 /* line 115, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-brand + .rs-nav, .rs-footer .rs-nav-brand + .rs-links,
-.rs-nav-footer .rs-nav-brand + .rs-links {
+.rs-nav-brand + .rs-nav {
   padding-left: 190px;
 }
 
@@ -3460,27 +3168,19 @@ td {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8BAMAAADI0sRBAAAAJ1BMVEXr6+vq6urs7Ozp6ent7e3u7u7o6Ojv7+/n5+fw8PDm5ubl5eXx8fETrQmTAAAFhElEQVR4Xi3VTXPjSB0G8H+3XhyYS7dkOZlZDuqW5JjiIqllO9wkuZ0MnGTLNjvsxW/Rbm1xsJ23KYpDHGcWFycyBVSF4hCWYmvZI8UH4MjHol27p9+x357n3yCWtM21tZDDeo3Hk2EA0BtMhrxQNAiwuZR2zbuLmf0ALTR45izN0eD1RwWrgYlEc+sCZWQW83PUaJTtHw9RY3apYFMY+VKIRhPqj9zmFr58T2mb4ctfbRU2AhLKEIud+EXuF6B7V7fdu7TjXXUXimkIeAzu+Q5RSpx72h5ingdDV+Er0BVAJnF+wp999EbtXjgWwelCOAOmiLoQWePL08AHqqeSug6gAvC5A+Ao5h2Yu9X6VaOsEozD8ejr8kOS1fWvy7NSkU0AJXSBiAGaAJPeoNXO4icuWh1FiiMHQpv3ehu0dx9RyfloHtVW8WQ094hiQYBhmg2Tz+Uv20PBcZXw5hyTKsm5Qoug3aj0ZXsNn858VNHgy0VUjzrBl98IxaUF3o57QbriS8Od7k0N34h4wDR8WipOHJAN6s7sB6phbSJ7um9iPqW6n04VdArIr65XUwZR3OrdmW/etqlF2Ju3u4Gi7oD7/RXIeSdD4/s8yR/cv4V5IluKGgfkUCeun9F2Ku1KRzX/t3/XG6i2uVAsNIjfVfC2uhSpyQZiyDt1i5sF78wyBUbwFldPUTga97014buUxcs+Ok6Z3VRsNIia4tcvjAqqXX0hd14wszu54wUTqhilsCqf+xUBTlve7s6XyDu7fyklsoQi1oFL7s5feXuIDS5do1dEzsnW6LU1BfkRWENqJBcMwMo59Zt2jTnrfzTtcKMIE7CodHpTChf2MoMPXf570Enc5a2VIsBAV8I+ywyZmSiuVKItqhLtAvo+2ODey26OjyhJgwx+ZxyF9V4ExtEOKcACcf+dEeszql9EMWAjzbTotW+kOlFkHrhDnsOoDdFgT+DPPsv+i9qFz+o/UUAT0Bf8qVXTqgFimkiQXM9O4iWSFw1FakLQkkm1dypU50xMy5PPXTzvlSdfbRSxDek/ZZYw9IwN8ukznhWeUUydWYFDxciCcMOblRFVx31iy0ZIoQARhpQYCjCB6c+1zKZ8MtwMJSJSzyxUEJlKBSBgD3e4yELKwCnGVL77lzFuuvLdX/+o0N7AA94fRgJNc7KR8ZHezV13e6T3rhVUh57Of0hlZvIzIo5S7GEiwkcFi+Dhid+vOgOwiEigfjhuMzUvGrOdYkEgNOk34FpAyv8Z8JquIqEeiK40WzHKwAM+WnpWFZfHXoVvyU85G352S/BHxb89EOk+/bldCr9lTkQzcfmH8hNIXNxSGAWADoBRCIgQ57s0S2paGC6zJF0duIbmk7CNfp93Kd5JfMgv3Wh2c1koxCk0NSCPzXjsM35M/ZRmlHStlNYPBCPQG0LLtVPZQPoAet/GXmMWjL6NeaTId/Cbm/Fj4VjccPhNdUvcPq1XjLj6QPHJBCx+Z+f1gFq4r3PNyf/jhRZ28p/lCvcWElv8wao/7TdWmXPnPC3i4C9wnhqaQv8KDBACzOPxDyNrW+g9q+VuHVA8MNgSWIKnj1HADCE3BCyfMwVSWDkgDaqPTxnQBdLGEZ0JLTEGdGaHBzR4nwm6BhOs9qtcGMTnroFuiJ9zReEDJWIdjDZ7CkvgYV+tQUrZR9ZQoZp5I/iAbSfCW2BvnK1DfYrqeB3CuYIjcBmIxuJ8Ly7qZJ85SMjepOkgO1Es7+H+ZawqRuShYvxQMfrat9KMRApvC6od3J6W9FALGdvc4qd2bnN2gOXAr0F3gs/4adfa0OSlN+wsatlLr+0prDEkf+J+AblQX9A1dDSEMxL7GiK+Iu3DKBTER4japi3p7DB9mYbdGT070P4/JfNcAmbpnUoAAAAASUVORK5CYII=);
 }
 /* line 6, ../lib/stylesheets/patterns/_nav-secondary.scss */
-.rs-nav-secondary .rs-nav, .rs-nav-secondary .rs-footer .rs-links, .rs-footer .rs-nav-secondary .rs-links,
-.rs-nav-secondary .rs-nav-footer .rs-links,
-.rs-nav-footer .rs-nav-secondary .rs-links {
+.rs-nav-secondary .rs-nav {
   box-shadow: inset 0 -1px 0 0 #dddddd;
   border-bottom: 1px solid whitesmoke;
 }
 /* line 10, ../lib/stylesheets/patterns/_nav-secondary.scss */
-.rs-nav-secondary .rs-nav-link, .rs-nav-secondary .rs-nav > li > a, .rs-nav-secondary .rs-footer .rs-links > li > a, .rs-footer .rs-nav-secondary .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li > a {
+.rs-nav-secondary .rs-nav-link, .rs-nav-secondary .rs-nav > li > a {
   padding: 2px 6px;
   color: #888888;
   text-decoration: none;
   text-shadow: 0 1px white;
 }
 /* line 17, ../lib/stylesheets/patterns/_nav-secondary.scss */
-.rs-nav-secondary .rs-nav-item, .rs-nav-secondary .rs-footer .rs-link, .rs-footer .rs-nav-secondary .rs-link,
-.rs-nav-secondary .rs-nav-footer .rs-link,
-.rs-nav-footer .rs-nav-secondary .rs-link, .rs-nav-secondary .rs-footer .rs-links > li, .rs-footer .rs-nav-secondary .rs-links > li,
-.rs-nav-secondary .rs-nav-footer .rs-links > li,
-.rs-nav-footer .rs-nav-secondary .rs-links > li, .rs-nav-secondary .rs-nav > li {
+.rs-nav-secondary .rs-nav-item, .rs-nav-secondary .rs-nav > li {
   float: left;
   margin: 5px 30px 5px 0;
   font-size: 14px;
@@ -3489,247 +3189,35 @@ td {
   position: relative;
 }
 /* line 25, ../lib/stylesheets/patterns/_nav-secondary.scss */
-.rs-nav-secondary .rs-nav-item:first-child, .rs-nav-secondary .rs-footer .rs-link:first-child, .rs-footer .rs-nav-secondary .rs-link:first-child,
-.rs-nav-secondary .rs-nav-footer .rs-link:first-child,
-.rs-nav-footer .rs-nav-secondary .rs-link:first-child, .rs-nav-secondary .rs-footer .rs-links > li:first-child, .rs-footer .rs-nav-secondary .rs-links > li:first-child,
-.rs-nav-secondary .rs-nav-footer .rs-links > li:first-child,
-.rs-nav-footer .rs-nav-secondary .rs-links > li:first-child, .rs-nav-secondary .rs-nav > li:first-child {
+.rs-nav-secondary .rs-nav-item:first-child, .rs-nav-secondary .rs-nav > li:first-child {
   margin-left: 0px;
 }
 /* line 32, ../lib/stylesheets/patterns/_nav-secondary.scss */
-.rs-nav-secondary .rs-nav-item:hover > a, .rs-nav-secondary .rs-footer .rs-link:hover > a, .rs-footer .rs-nav-secondary .rs-link:hover > a,
-.rs-nav-secondary .rs-nav-footer .rs-link:hover > a,
-.rs-nav-footer .rs-nav-secondary .rs-link:hover > a, .rs-nav-secondary .rs-footer .rs-links > li:hover > a, .rs-footer .rs-nav-secondary .rs-links > li:hover > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li:hover > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li:hover > a, .rs-nav-secondary .rs-nav > li:hover > a,
+.rs-nav-secondary .rs-nav-item:hover > a, .rs-nav-secondary .rs-nav > li:hover > a,
 .rs-nav-secondary .rs-nav-item:hover .rs-nav-link,
-.rs-nav-secondary .rs-footer .rs-link:hover .rs-nav-link,
-.rs-footer .rs-nav-secondary .rs-link:hover .rs-nav-link,
-.rs-nav-secondary .rs-nav-footer .rs-link:hover .rs-nav-link,
-.rs-nav-footer .rs-nav-secondary .rs-link:hover .rs-nav-link,
-.rs-nav-secondary .rs-footer .rs-links > li:hover .rs-nav-link,
-.rs-footer .rs-nav-secondary .rs-links > li:hover .rs-nav-link,
-.rs-nav-secondary .rs-nav-footer .rs-links > li:hover .rs-nav-link,
-.rs-nav-footer .rs-nav-secondary .rs-links > li:hover .rs-nav-link,
 .rs-nav-secondary .rs-nav > li:hover .rs-nav-link,
 .rs-nav-secondary .rs-nav-item:hover .rs-nav > li > a,
-.rs-nav-secondary .rs-footer .rs-link:hover .rs-nav > li > a,
-.rs-footer .rs-nav-secondary .rs-link:hover .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-link:hover .rs-nav > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-link:hover .rs-nav > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li:hover .rs-nav > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li:hover .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li:hover .rs-nav > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li:hover .rs-nav > li > a,
-.rs-nav-secondary .rs-nav > li:hover .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-item:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-item:hover .rs-links > li > a,
-.rs-nav-secondary .rs-footer .rs-link:hover .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-link:hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-link:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-footer .rs-link:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-link:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-secondary .rs-link:hover .rs-links > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li:hover .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li:hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-footer .rs-links > li:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-secondary .rs-links > li:hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav > li:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav > li:hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav-item:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-nav-item:hover .rs-links > li > a,
-.rs-nav-secondary .rs-footer .rs-link:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-footer .rs-link:hover .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-link:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-secondary .rs-link:hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-link:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-link:hover .rs-links > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-footer .rs-links > li:hover .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-secondary .rs-links > li:hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li:hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav > li:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-nav > li:hover .rs-links > li > a, .rs-nav-secondary .rs-nav-item.hover > a, .rs-nav-secondary .rs-footer .hover.rs-link > a, .rs-footer .rs-nav-secondary .hover.rs-link > a,
-.rs-nav-secondary .rs-nav-footer .hover.rs-link > a,
-.rs-nav-footer .rs-nav-secondary .hover.rs-link > a, .rs-nav-secondary .rs-footer .rs-links > li.hover > a, .rs-footer .rs-nav-secondary .rs-links > li.hover > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.hover > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.hover > a, .rs-nav-secondary .rs-nav > li.hover > a,
+.rs-nav-secondary .rs-nav > li:hover .rs-nav > li > a, .rs-nav-secondary .rs-nav-item.hover > a, .rs-nav-secondary .rs-nav > li.hover > a,
 .rs-nav-secondary .rs-nav-item.hover .rs-nav-link,
-.rs-nav-secondary .rs-footer .hover.rs-link .rs-nav-link,
-.rs-footer .rs-nav-secondary .hover.rs-link .rs-nav-link,
-.rs-nav-secondary .rs-nav-footer .hover.rs-link .rs-nav-link,
-.rs-nav-footer .rs-nav-secondary .hover.rs-link .rs-nav-link,
-.rs-nav-secondary .rs-footer .rs-links > li.hover .rs-nav-link,
-.rs-footer .rs-nav-secondary .rs-links > li.hover .rs-nav-link,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.hover .rs-nav-link,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.hover .rs-nav-link,
 .rs-nav-secondary .rs-nav > li.hover .rs-nav-link,
 .rs-nav-secondary .rs-nav-item.hover .rs-nav > li > a,
-.rs-nav-secondary .rs-footer .hover.rs-link .rs-nav > li > a,
-.rs-footer .rs-nav-secondary .hover.rs-link .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-footer .hover.rs-link .rs-nav > li > a,
-.rs-nav-footer .rs-nav-secondary .hover.rs-link .rs-nav > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li.hover .rs-nav > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li.hover .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.hover .rs-nav > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.hover .rs-nav > li > a,
-.rs-nav-secondary .rs-nav > li.hover .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-item.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-item.hover .rs-links > li > a,
-.rs-nav-secondary .rs-footer .hover.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-secondary .hover.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .hover.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-footer .hover.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .hover.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-secondary .hover.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li.hover .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li.hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-footer .rs-links > li.hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-secondary .rs-links > li.hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav > li.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav > li.hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav-item.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-nav-item.hover .rs-links > li > a,
-.rs-nav-secondary .rs-footer .hover.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-footer .hover.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-secondary .hover.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-secondary .hover.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .hover.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .hover.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-footer .rs-links > li.hover .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-secondary .rs-links > li.hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.hover .rs-links > li > a,
-.rs-nav-secondary .rs-nav > li.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-nav > li.hover .rs-links > li > a {
+.rs-nav-secondary .rs-nav > li.hover .rs-nav > li > a {
   color: #333333;
 }
 /* line 39, ../lib/stylesheets/patterns/_nav-secondary.scss */
-.rs-nav-secondary .rs-nav-item.active > a, .rs-nav-secondary .rs-footer .active.rs-link > a, .rs-footer .rs-nav-secondary .active.rs-link > a,
-.rs-nav-secondary .rs-nav-footer .active.rs-link > a,
-.rs-nav-footer .rs-nav-secondary .active.rs-link > a, .rs-nav-secondary .rs-footer .rs-links > li.active > a, .rs-footer .rs-nav-secondary .rs-links > li.active > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.active > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.active > a, .rs-nav-secondary .rs-nav > li.active > a,
+.rs-nav-secondary .rs-nav-item.active > a, .rs-nav-secondary .rs-nav > li.active > a,
 .rs-nav-secondary .rs-nav-item.active .rs-nav-link,
-.rs-nav-secondary .rs-footer .active.rs-link .rs-nav-link,
-.rs-footer .rs-nav-secondary .active.rs-link .rs-nav-link,
-.rs-nav-secondary .rs-nav-footer .active.rs-link .rs-nav-link,
-.rs-nav-footer .rs-nav-secondary .active.rs-link .rs-nav-link,
-.rs-nav-secondary .rs-footer .rs-links > li.active .rs-nav-link,
-.rs-footer .rs-nav-secondary .rs-links > li.active .rs-nav-link,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.active .rs-nav-link,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.active .rs-nav-link,
 .rs-nav-secondary .rs-nav > li.active .rs-nav-link,
 .rs-nav-secondary .rs-nav-item.active .rs-nav > li > a,
-.rs-nav-secondary .rs-footer .active.rs-link .rs-nav > li > a,
-.rs-footer .rs-nav-secondary .active.rs-link .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-footer .active.rs-link .rs-nav > li > a,
-.rs-nav-footer .rs-nav-secondary .active.rs-link .rs-nav > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li.active .rs-nav > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li.active .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.active .rs-nav > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.active .rs-nav > li > a,
-.rs-nav-secondary .rs-nav > li.active .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-item.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-item.active .rs-links > li > a,
-.rs-nav-secondary .rs-footer .active.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-secondary .active.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .active.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-footer .active.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .active.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-secondary .active.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li.active .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li.active .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-footer .rs-links > li.active .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-secondary .rs-links > li.active .rs-links > li > a,
-.rs-nav-secondary .rs-nav > li.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav > li.active .rs-links > li > a,
-.rs-nav-secondary .rs-nav-item.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-nav-item.active .rs-links > li > a,
-.rs-nav-secondary .rs-footer .active.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-footer .active.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-secondary .active.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-secondary .active.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .active.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .active.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-footer .rs-links > li.active .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-secondary .rs-links > li.active .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.active .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.active .rs-links > li > a,
-.rs-nav-secondary .rs-nav > li.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-nav > li.active .rs-links > li > a {
+.rs-nav-secondary .rs-nav > li.active .rs-nav > li > a {
   color: #c40022;
 }
 /* line 46, ../lib/stylesheets/patterns/_nav-secondary.scss */
-.rs-nav-secondary .rs-nav-item.disabled > a, .rs-nav-secondary .rs-footer .disabled.rs-link > a, .rs-footer .rs-nav-secondary .disabled.rs-link > a,
-.rs-nav-secondary .rs-nav-footer .disabled.rs-link > a,
-.rs-nav-footer .rs-nav-secondary .disabled.rs-link > a, .rs-nav-secondary .rs-footer .rs-links > li.disabled > a, .rs-footer .rs-nav-secondary .rs-links > li.disabled > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.disabled > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.disabled > a, .rs-nav-secondary .rs-nav > li.disabled > a,
+.rs-nav-secondary .rs-nav-item.disabled > a, .rs-nav-secondary .rs-nav > li.disabled > a,
 .rs-nav-secondary .rs-nav-item.disabled .rs-nav-link,
-.rs-nav-secondary .rs-footer .disabled.rs-link .rs-nav-link,
-.rs-footer .rs-nav-secondary .disabled.rs-link .rs-nav-link,
-.rs-nav-secondary .rs-nav-footer .disabled.rs-link .rs-nav-link,
-.rs-nav-footer .rs-nav-secondary .disabled.rs-link .rs-nav-link,
-.rs-nav-secondary .rs-footer .rs-links > li.disabled .rs-nav-link,
-.rs-footer .rs-nav-secondary .rs-links > li.disabled .rs-nav-link,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.disabled .rs-nav-link,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.disabled .rs-nav-link,
 .rs-nav-secondary .rs-nav > li.disabled .rs-nav-link,
 .rs-nav-secondary .rs-nav-item.disabled .rs-nav > li > a,
-.rs-nav-secondary .rs-footer .disabled.rs-link .rs-nav > li > a,
-.rs-footer .rs-nav-secondary .disabled.rs-link .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-footer .disabled.rs-link .rs-nav > li > a,
-.rs-nav-footer .rs-nav-secondary .disabled.rs-link .rs-nav > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li.disabled .rs-nav > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li.disabled .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.disabled .rs-nav > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.disabled .rs-nav > li > a,
-.rs-nav-secondary .rs-nav > li.disabled .rs-nav > li > a,
-.rs-nav-secondary .rs-nav-item.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-item.disabled .rs-links > li > a,
-.rs-nav-secondary .rs-footer .disabled.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-secondary .disabled.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .disabled.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-footer .disabled.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .disabled.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-secondary .disabled.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-secondary .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-secondary .rs-nav > li.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-nav > li.disabled .rs-links > li > a,
-.rs-nav-secondary .rs-nav-item.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-nav-item.disabled .rs-links > li > a,
-.rs-nav-secondary .rs-footer .disabled.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-footer .disabled.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-secondary .disabled.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-secondary .disabled.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .disabled.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .disabled.rs-link .rs-links > li > a,
-.rs-nav-secondary .rs-footer .rs-links > li.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-footer .rs-nav-secondary .rs-links > li.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-secondary .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-secondary .rs-nav-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-secondary .rs-nav > li.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-secondary .rs-nav > li.disabled .rs-links > li > a {
+.rs-nav-secondary .rs-nav > li.disabled .rs-nav > li > a {
   color: #bbb;
   cursor: default;
   text-shadow: 0 1px #f5f5f5;
@@ -3746,41 +3234,20 @@ td {
   z-index: 1120;
 }
 /* line 10, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav, .rs-nav-utility .rs-footer .rs-links, .rs-footer .rs-nav-utility .rs-links,
-.rs-nav-utility .rs-nav-footer .rs-links,
-.rs-nav-footer .rs-nav-utility .rs-links {
+.rs-nav-utility .rs-nav {
   float: left;
 }
 /* line 13, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav.rs-pull-right, .rs-nav-utility .rs-nav.rs-detail-header-actions, .rs-nav-utility .rs-footer .rs-detail-header-actions.rs-links, .rs-footer .rs-nav-utility .rs-detail-header-actions.rs-links,
-.rs-nav-utility .rs-nav-footer .rs-detail-header-actions.rs-links,
-.rs-nav-footer .rs-nav-utility .rs-detail-header-actions.rs-links, .rs-nav-utility .rs-footer .rs-pull-right.rs-links, .rs-footer .rs-nav-utility .rs-pull-right.rs-links,
-.rs-nav-utility .rs-nav-footer .rs-pull-right.rs-links,
-.rs-nav-footer .rs-nav-utility .rs-pull-right.rs-links {
+.rs-nav-utility .rs-nav.rs-pull-right {
   float: right;
 }
 /* line 17, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav.rs-pull-right > li, .rs-nav-utility .rs-nav.rs-detail-header-actions > li, .rs-nav-utility .rs-footer .rs-detail-header-actions.rs-links > li, .rs-footer .rs-nav-utility .rs-detail-header-actions.rs-links > li,
-.rs-nav-utility .rs-nav-footer .rs-detail-header-actions.rs-links > li,
-.rs-nav-footer .rs-nav-utility .rs-detail-header-actions.rs-links > li, .rs-nav-utility .rs-footer .rs-pull-right.rs-links > li, .rs-footer .rs-nav-utility .rs-pull-right.rs-links > li,
-.rs-nav-utility .rs-nav-footer .rs-pull-right.rs-links > li,
-.rs-nav-footer .rs-nav-utility .rs-pull-right.rs-links > li,
-.rs-nav-utility .rs-nav.rs-pull-right .rs-list-item,
-.rs-nav-utility .rs-nav.rs-detail-header-actions .rs-list-item,
-.rs-nav-utility .rs-footer .rs-detail-header-actions.rs-links .rs-list-item,
-.rs-footer .rs-nav-utility .rs-detail-header-actions.rs-links .rs-list-item,
-.rs-nav-utility .rs-nav-footer .rs-detail-header-actions.rs-links .rs-list-item,
-.rs-nav-footer .rs-nav-utility .rs-detail-header-actions.rs-links .rs-list-item,
-.rs-nav-utility .rs-footer .rs-pull-right.rs-links .rs-list-item,
-.rs-footer .rs-nav-utility .rs-pull-right.rs-links .rs-list-item,
-.rs-nav-utility .rs-nav-footer .rs-pull-right.rs-links .rs-list-item,
-.rs-nav-footer .rs-nav-utility .rs-pull-right.rs-links .rs-list-item {
+.rs-nav-utility .rs-nav.rs-pull-right > li,
+.rs-nav-utility .rs-nav.rs-pull-right .rs-list-item {
   margin: 0 0 0 30px;
 }
 /* line 23, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav-link, .rs-nav-utility .rs-nav > li > a, .rs-nav-utility .rs-footer .rs-links > li > a, .rs-footer .rs-nav-utility .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li > a {
+.rs-nav-utility .rs-nav-link, .rs-nav-utility .rs-nav > li > a {
   padding: 2px 0 1px;
   color: #999999;
   position: relative;
@@ -3795,285 +3262,49 @@ td {
   vertical-align: text-bottom;
 }
 /* line 38, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav-item, .rs-nav-utility .rs-footer .rs-link, .rs-footer .rs-nav-utility .rs-link,
-.rs-nav-utility .rs-nav-footer .rs-link,
-.rs-nav-footer .rs-nav-utility .rs-link, .rs-nav-utility .rs-footer .rs-links > li, .rs-footer .rs-nav-utility .rs-links > li,
-.rs-nav-utility .rs-nav-footer .rs-links > li,
-.rs-nav-footer .rs-nav-utility .rs-links > li, .rs-nav-utility .rs-nav > li {
+.rs-nav-utility .rs-nav-item, .rs-nav-utility .rs-nav > li {
   position: relative;
   margin: 0 30px 0 0;
 }
 /* line 46, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav-item:hover > a, .rs-nav-utility .rs-footer .rs-link:hover > a, .rs-footer .rs-nav-utility .rs-link:hover > a,
-.rs-nav-utility .rs-nav-footer .rs-link:hover > a,
-.rs-nav-footer .rs-nav-utility .rs-link:hover > a, .rs-nav-utility .rs-footer .rs-links > li:hover > a, .rs-footer .rs-nav-utility .rs-links > li:hover > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li:hover > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li:hover > a, .rs-nav-utility .rs-nav > li:hover > a,
+.rs-nav-utility .rs-nav-item:hover > a, .rs-nav-utility .rs-nav > li:hover > a,
 .rs-nav-utility .rs-nav-item:hover .rs-nav-link,
-.rs-nav-utility .rs-footer .rs-link:hover .rs-nav-link,
-.rs-footer .rs-nav-utility .rs-link:hover .rs-nav-link,
-.rs-nav-utility .rs-nav-footer .rs-link:hover .rs-nav-link,
-.rs-nav-footer .rs-nav-utility .rs-link:hover .rs-nav-link,
-.rs-nav-utility .rs-footer .rs-links > li:hover .rs-nav-link,
-.rs-footer .rs-nav-utility .rs-links > li:hover .rs-nav-link,
-.rs-nav-utility .rs-nav-footer .rs-links > li:hover .rs-nav-link,
-.rs-nav-footer .rs-nav-utility .rs-links > li:hover .rs-nav-link,
 .rs-nav-utility .rs-nav > li:hover .rs-nav-link,
 .rs-nav-utility .rs-nav-item:hover .rs-nav > li > a,
-.rs-nav-utility .rs-footer .rs-link:hover .rs-nav > li > a,
-.rs-footer .rs-nav-utility .rs-link:hover .rs-nav > li > a,
-.rs-nav-utility .rs-nav-footer .rs-link:hover .rs-nav > li > a,
-.rs-nav-footer .rs-nav-utility .rs-link:hover .rs-nav > li > a,
-.rs-nav-utility .rs-footer .rs-links > li:hover .rs-nav > li > a,
-.rs-footer .rs-nav-utility .rs-links > li:hover .rs-nav > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li:hover .rs-nav > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li:hover .rs-nav > li > a,
-.rs-nav-utility .rs-nav > li:hover .rs-nav > li > a,
-.rs-nav-utility .rs-nav-item:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-item:hover .rs-links > li > a,
-.rs-nav-utility .rs-footer .rs-link:hover .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-link:hover .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-link:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-footer .rs-link:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-link:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-utility .rs-link:hover .rs-links > li > a,
-.rs-nav-utility .rs-footer .rs-links > li:hover .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-links > li:hover .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-footer .rs-links > li:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-utility .rs-links > li:hover .rs-links > li > a,
-.rs-nav-utility .rs-nav > li:hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav > li:hover .rs-links > li > a,
-.rs-nav-utility .rs-nav-item:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-nav-item:hover .rs-links > li > a,
-.rs-nav-utility .rs-footer .rs-link:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-footer .rs-link:hover .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-link:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-utility .rs-link:hover .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-link:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-link:hover .rs-links > li > a,
-.rs-nav-utility .rs-footer .rs-links > li:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-footer .rs-links > li:hover .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-links > li:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-utility .rs-links > li:hover .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li:hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li:hover .rs-links > li > a,
-.rs-nav-utility .rs-nav > li:hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-nav > li:hover .rs-links > li > a, .rs-nav-utility .rs-nav-item.hover > a, .rs-nav-utility .rs-footer .hover.rs-link > a, .rs-footer .rs-nav-utility .hover.rs-link > a,
-.rs-nav-utility .rs-nav-footer .hover.rs-link > a,
-.rs-nav-footer .rs-nav-utility .hover.rs-link > a, .rs-nav-utility .rs-footer .rs-links > li.hover > a, .rs-footer .rs-nav-utility .rs-links > li.hover > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.hover > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.hover > a, .rs-nav-utility .rs-nav > li.hover > a,
+.rs-nav-utility .rs-nav > li:hover .rs-nav > li > a, .rs-nav-utility .rs-nav-item.hover > a, .rs-nav-utility .rs-nav > li.hover > a,
 .rs-nav-utility .rs-nav-item.hover .rs-nav-link,
-.rs-nav-utility .rs-footer .hover.rs-link .rs-nav-link,
-.rs-footer .rs-nav-utility .hover.rs-link .rs-nav-link,
-.rs-nav-utility .rs-nav-footer .hover.rs-link .rs-nav-link,
-.rs-nav-footer .rs-nav-utility .hover.rs-link .rs-nav-link,
-.rs-nav-utility .rs-footer .rs-links > li.hover .rs-nav-link,
-.rs-footer .rs-nav-utility .rs-links > li.hover .rs-nav-link,
-.rs-nav-utility .rs-nav-footer .rs-links > li.hover .rs-nav-link,
-.rs-nav-footer .rs-nav-utility .rs-links > li.hover .rs-nav-link,
 .rs-nav-utility .rs-nav > li.hover .rs-nav-link,
 .rs-nav-utility .rs-nav-item.hover .rs-nav > li > a,
-.rs-nav-utility .rs-footer .hover.rs-link .rs-nav > li > a,
-.rs-footer .rs-nav-utility .hover.rs-link .rs-nav > li > a,
-.rs-nav-utility .rs-nav-footer .hover.rs-link .rs-nav > li > a,
-.rs-nav-footer .rs-nav-utility .hover.rs-link .rs-nav > li > a,
-.rs-nav-utility .rs-footer .rs-links > li.hover .rs-nav > li > a,
-.rs-footer .rs-nav-utility .rs-links > li.hover .rs-nav > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.hover .rs-nav > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.hover .rs-nav > li > a,
-.rs-nav-utility .rs-nav > li.hover .rs-nav > li > a,
-.rs-nav-utility .rs-nav-item.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-item.hover .rs-links > li > a,
-.rs-nav-utility .rs-footer .hover.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-utility .hover.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .hover.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-footer .hover.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .hover.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-utility .hover.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-footer .rs-links > li.hover .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-links > li.hover .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-footer .rs-links > li.hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-utility .rs-links > li.hover .rs-links > li > a,
-.rs-nav-utility .rs-nav > li.hover .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav > li.hover .rs-links > li > a,
-.rs-nav-utility .rs-nav-item.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-nav-item.hover .rs-links > li > a,
-.rs-nav-utility .rs-footer .hover.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-footer .hover.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-utility .hover.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-utility .hover.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .hover.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .hover.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-footer .rs-links > li.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-footer .rs-links > li.hover .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-links > li.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-utility .rs-links > li.hover .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.hover .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.hover .rs-links > li > a,
-.rs-nav-utility .rs-nav > li.hover .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-nav > li.hover .rs-links > li > a, .rs-nav-utility .rs-nav-item.active > a, .rs-nav-utility .rs-footer .active.rs-link > a, .rs-footer .rs-nav-utility .active.rs-link > a,
-.rs-nav-utility .rs-nav-footer .active.rs-link > a,
-.rs-nav-footer .rs-nav-utility .active.rs-link > a, .rs-nav-utility .rs-footer .rs-links > li.active > a, .rs-footer .rs-nav-utility .rs-links > li.active > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.active > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.active > a, .rs-nav-utility .rs-nav > li.active > a,
+.rs-nav-utility .rs-nav > li.hover .rs-nav > li > a, .rs-nav-utility .rs-nav-item.active > a, .rs-nav-utility .rs-nav > li.active > a,
 .rs-nav-utility .rs-nav-item.active .rs-nav-link,
-.rs-nav-utility .rs-footer .active.rs-link .rs-nav-link,
-.rs-footer .rs-nav-utility .active.rs-link .rs-nav-link,
-.rs-nav-utility .rs-nav-footer .active.rs-link .rs-nav-link,
-.rs-nav-footer .rs-nav-utility .active.rs-link .rs-nav-link,
-.rs-nav-utility .rs-footer .rs-links > li.active .rs-nav-link,
-.rs-footer .rs-nav-utility .rs-links > li.active .rs-nav-link,
-.rs-nav-utility .rs-nav-footer .rs-links > li.active .rs-nav-link,
-.rs-nav-footer .rs-nav-utility .rs-links > li.active .rs-nav-link,
 .rs-nav-utility .rs-nav > li.active .rs-nav-link,
 .rs-nav-utility .rs-nav-item.active .rs-nav > li > a,
-.rs-nav-utility .rs-footer .active.rs-link .rs-nav > li > a,
-.rs-footer .rs-nav-utility .active.rs-link .rs-nav > li > a,
-.rs-nav-utility .rs-nav-footer .active.rs-link .rs-nav > li > a,
-.rs-nav-footer .rs-nav-utility .active.rs-link .rs-nav > li > a,
-.rs-nav-utility .rs-footer .rs-links > li.active .rs-nav > li > a,
-.rs-footer .rs-nav-utility .rs-links > li.active .rs-nav > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.active .rs-nav > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.active .rs-nav > li > a,
-.rs-nav-utility .rs-nav > li.active .rs-nav > li > a,
-.rs-nav-utility .rs-nav-item.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-item.active .rs-links > li > a,
-.rs-nav-utility .rs-footer .active.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-utility .active.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .active.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-footer .active.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .active.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-utility .active.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-footer .rs-links > li.active .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-links > li.active .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-footer .rs-links > li.active .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-utility .rs-links > li.active .rs-links > li > a,
-.rs-nav-utility .rs-nav > li.active .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav > li.active .rs-links > li > a,
-.rs-nav-utility .rs-nav-item.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-nav-item.active .rs-links > li > a,
-.rs-nav-utility .rs-footer .active.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-footer .active.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-utility .active.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-utility .active.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .active.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .active.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-footer .rs-links > li.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-footer .rs-links > li.active .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-links > li.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-utility .rs-links > li.active .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.active .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.active .rs-links > li > a,
-.rs-nav-utility .rs-nav > li.active .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-nav > li.active .rs-links > li > a {
+.rs-nav-utility .rs-nav > li.active .rs-nav > li > a {
   color: white;
 }
 /* line 53, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav-item.disabled > a, .rs-nav-utility .rs-footer .disabled.rs-link > a, .rs-footer .rs-nav-utility .disabled.rs-link > a,
-.rs-nav-utility .rs-nav-footer .disabled.rs-link > a,
-.rs-nav-footer .rs-nav-utility .disabled.rs-link > a, .rs-nav-utility .rs-footer .rs-links > li.disabled > a, .rs-footer .rs-nav-utility .rs-links > li.disabled > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.disabled > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.disabled > a, .rs-nav-utility .rs-nav > li.disabled > a,
+.rs-nav-utility .rs-nav-item.disabled > a, .rs-nav-utility .rs-nav > li.disabled > a,
 .rs-nav-utility .rs-nav-item.disabled .rs-nav-link,
-.rs-nav-utility .rs-footer .disabled.rs-link .rs-nav-link,
-.rs-footer .rs-nav-utility .disabled.rs-link .rs-nav-link,
-.rs-nav-utility .rs-nav-footer .disabled.rs-link .rs-nav-link,
-.rs-nav-footer .rs-nav-utility .disabled.rs-link .rs-nav-link,
-.rs-nav-utility .rs-footer .rs-links > li.disabled .rs-nav-link,
-.rs-footer .rs-nav-utility .rs-links > li.disabled .rs-nav-link,
-.rs-nav-utility .rs-nav-footer .rs-links > li.disabled .rs-nav-link,
-.rs-nav-footer .rs-nav-utility .rs-links > li.disabled .rs-nav-link,
 .rs-nav-utility .rs-nav > li.disabled .rs-nav-link,
 .rs-nav-utility .rs-nav-item.disabled .rs-nav > li > a,
-.rs-nav-utility .rs-footer .disabled.rs-link .rs-nav > li > a,
-.rs-footer .rs-nav-utility .disabled.rs-link .rs-nav > li > a,
-.rs-nav-utility .rs-nav-footer .disabled.rs-link .rs-nav > li > a,
-.rs-nav-footer .rs-nav-utility .disabled.rs-link .rs-nav > li > a,
-.rs-nav-utility .rs-footer .rs-links > li.disabled .rs-nav > li > a,
-.rs-footer .rs-nav-utility .rs-links > li.disabled .rs-nav > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.disabled .rs-nav > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.disabled .rs-nav > li > a,
-.rs-nav-utility .rs-nav > li.disabled .rs-nav > li > a,
-.rs-nav-utility .rs-nav-item.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-item.disabled .rs-links > li > a,
-.rs-nav-utility .rs-footer .disabled.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-utility .disabled.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .disabled.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-footer .disabled.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .disabled.rs-link .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-utility .disabled.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-footer .rs-nav-utility .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-utility .rs-nav > li.disabled .rs-footer .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-nav > li.disabled .rs-links > li > a,
-.rs-nav-utility .rs-nav-item.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-nav-item.disabled .rs-links > li > a,
-.rs-nav-utility .rs-footer .disabled.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-footer .disabled.rs-link .rs-links > li > a,
-.rs-footer .rs-nav-utility .disabled.rs-link .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-utility .disabled.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .disabled.rs-link .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .disabled.rs-link .rs-links > li > a,
-.rs-nav-utility .rs-footer .rs-links > li.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-footer .rs-nav-utility .rs-links > li.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-footer .rs-nav-utility .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-utility .rs-nav-footer .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-links > li.disabled .rs-links > li > a,
-.rs-nav-utility .rs-nav > li.disabled .rs-nav-footer .rs-links > li > a,
-.rs-nav-footer .rs-nav-utility .rs-nav > li.disabled .rs-links > li > a {
+.rs-nav-utility .rs-nav > li.disabled .rs-nav > li > a {
   color: #666666;
   cursor: default;
 }
 /* line 60, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav-item.rs-dropdown .rs-caret, .rs-nav-utility .rs-footer .rs-dropdown.rs-link .rs-caret, .rs-footer .rs-nav-utility .rs-dropdown.rs-link .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-dropdown.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-dropdown.rs-link .rs-caret, .rs-nav-utility .rs-footer .rs-links > li.rs-dropdown .rs-caret, .rs-footer .rs-nav-utility .rs-links > li.rs-dropdown .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-links > li.rs-dropdown .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-links > li.rs-dropdown .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown .rs-caret {
+.rs-nav-utility .rs-nav-item.rs-dropdown .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown .rs-caret {
   background-position: 0 -356px;
 }
 /* line 64, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav-item.rs-dropdown .rs-dropdown-menu, .rs-nav-utility .rs-footer .rs-dropdown.rs-link .rs-dropdown-menu, .rs-footer .rs-nav-utility .rs-dropdown.rs-link .rs-dropdown-menu,
-.rs-nav-utility .rs-nav-footer .rs-dropdown.rs-link .rs-dropdown-menu,
-.rs-nav-footer .rs-nav-utility .rs-dropdown.rs-link .rs-dropdown-menu, .rs-nav-utility .rs-footer .rs-links > li.rs-dropdown .rs-dropdown-menu, .rs-footer .rs-nav-utility .rs-links > li.rs-dropdown .rs-dropdown-menu,
-.rs-nav-utility .rs-nav-footer .rs-links > li.rs-dropdown .rs-dropdown-menu,
-.rs-nav-footer .rs-nav-utility .rs-links > li.rs-dropdown .rs-dropdown-menu, .rs-nav-utility .rs-nav > li.rs-dropdown .rs-dropdown-menu {
+.rs-nav-utility .rs-nav-item.rs-dropdown .rs-dropdown-menu, .rs-nav-utility .rs-nav > li.rs-dropdown .rs-dropdown-menu {
   margin-top: 1px;
 }
 /* line 72, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav-item.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-footer .rs-dropdown.rs-link:hover .rs-caret, .rs-footer .rs-nav-utility .rs-dropdown.rs-link:hover .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-dropdown.rs-link:hover .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-dropdown.rs-link:hover .rs-caret, .rs-nav-utility .rs-footer .rs-links > li.rs-dropdown:hover .rs-caret, .rs-footer .rs-nav-utility .rs-links > li.rs-dropdown:hover .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-links > li.rs-dropdown:hover .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-links > li.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-footer .rs-dropdown.hover.rs-link .rs-caret, .rs-footer .rs-nav-utility .rs-dropdown.hover.rs-link .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-dropdown.hover.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-dropdown.hover.rs-link .rs-caret, .rs-nav-utility .rs-footer .rs-links > li.rs-dropdown.hover .rs-caret, .rs-footer .rs-nav-utility .rs-links > li.rs-dropdown.hover .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-links > li.rs-dropdown.hover .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-links > li.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-utility .rs-footer .rs-dropdown.active.rs-link .rs-caret, .rs-footer .rs-nav-utility .rs-dropdown.active.rs-link .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-dropdown.active.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-dropdown.active.rs-link .rs-caret, .rs-nav-utility .rs-footer .rs-links > li.rs-dropdown.active .rs-caret, .rs-footer .rs-nav-utility .rs-links > li.rs-dropdown.active .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-links > li.rs-dropdown.active .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-links > li.rs-dropdown.active .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.active .rs-caret {
+.rs-nav-utility .rs-nav-item.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.active .rs-caret {
   background-position: 0 -553px;
 }
 /* line 78, ../lib/stylesheets/patterns/_nav-utility.scss */
-.rs-nav-utility .rs-nav-item.rs-dropdown.disabled .rs-caret, .rs-nav-utility .rs-footer .rs-dropdown.disabled.rs-link .rs-caret, .rs-footer .rs-nav-utility .rs-dropdown.disabled.rs-link .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-dropdown.disabled.rs-link .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-dropdown.disabled.rs-link .rs-caret, .rs-nav-utility .rs-footer .rs-links > li.rs-dropdown.disabled .rs-caret, .rs-footer .rs-nav-utility .rs-links > li.rs-dropdown.disabled .rs-caret,
-.rs-nav-utility .rs-nav-footer .rs-links > li.rs-dropdown.disabled .rs-caret,
-.rs-nav-footer .rs-nav-utility .rs-links > li.rs-dropdown.disabled .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.disabled .rs-caret {
+.rs-nav-utility .rs-nav-item.rs-dropdown.disabled .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.disabled .rs-caret {
   display: none;
 }
 
@@ -4395,8 +3626,8 @@ td {
 .rs-tabs {
   list-style: none;
   margin: 0;
-  border-left: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
 }
 /* line 4, ../lib/stylesheets/_mixins.scss */
 .rs-tabs:before, .rs-tabs:after {
@@ -4421,9 +3652,9 @@ td {
   display: block;
   padding: 5px 10px;
   background-color: #EEE;
-  border-top: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
   color: #333;
   font-weight: bold;
 }
@@ -4443,7 +3674,7 @@ td {
 
 /* line 38, ../lib/stylesheets/patterns/_tabs.scss */
 .rs-tab-content {
-  border: 1px solid #dddddd;
+  border: 1px solid #e7e7e7;
   border-top: none;
 }
 
@@ -4482,4 +3713,51 @@ td {
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 9px 1px;
   -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 9px 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0 0 9px 1px;
+}
+
+/** Table Status List **/
+/* line 2, ../lib/stylesheets/patterns/_status-list.scss */
+.rs-table-status-list {
+  padding: 7px 8px;
+}
+
+/* line 6, ../lib/stylesheets/patterns/_status-list.scss */
+.rs-status-list {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 11, ../lib/stylesheets/patterns/_status-list.scss */
+.rs-status-list-item {
+  list-style-type: none;
+  float: left;
+  display: block;
+  cursor: pointer;
+}
+
+/* line 18, ../lib/stylesheets/patterns/_status-list.scss */
+.rs-status-list-item .rs-icon-status {
+  width: 6px;
+  height: 6px;
+  margin: 3px;
+}
+
+/* line 24, ../lib/stylesheets/patterns/_status-list.scss */
+.rs-icon-status.rs-status-ok {
+  background-color: #00a96d;
+}
+
+/* line 28, ../lib/stylesheets/patterns/_status-list.scss */
+.rs-icon-status.rs-status-warning {
+  background-color: #ff9d00;
+}
+
+/* line 32, ../lib/stylesheets/patterns/_status-list.scss */
+.rs-icon-status.rs-status-error {
+  background-color: #c40022;
+}
+
+/* line 36, ../lib/stylesheets/patterns/_status-list.scss */
+.rs-icon-status.rs-status-disabled {
+  background-color: #cccccc;
 }
