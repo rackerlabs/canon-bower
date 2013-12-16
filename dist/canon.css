@@ -3591,35 +3591,46 @@ td {
   background: #ff9d00 url("loading-white-yellow.gif") 4px center no-repeat;
   padding-left: 20px;
 }
+/* line 51, ../lib/stylesheets/patterns/_status.scss */
+.rs-status.rs-status-processing-ok {
+  color: white;
+  background: #00a96d url("loading-white-green.gif") 4px center no-repeat;
+  padding-left: 20px;
+}
 
-/* line 53, ../lib/stylesheets/patterns/_status.scss */
+/* line 59, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-ok {
   color: #00a96d;
 }
 
-/* line 57, ../lib/stylesheets/patterns/_status.scss */
+/* line 63, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-warning {
   color: #ff9d00;
 }
 
-/* line 61, ../lib/stylesheets/patterns/_status.scss */
+/* line 67, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-error {
   color: #c40022;
 }
 
-/* line 65, ../lib/stylesheets/patterns/_status.scss */
+/* line 71, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-disabled {
   color: #cccccc;
 }
 
-/* line 69, ../lib/stylesheets/patterns/_status.scss */
+/* line 75, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-pending {
   color: #ff9d00;
 }
 
-/* line 73, ../lib/stylesheets/patterns/_status.scss */
+/* line 79, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-processing {
   color: #ff9d00;
+}
+
+/* line 83, ../lib/stylesheets/patterns/_status.scss */
+.rs-status-processing-ok {
+  color: #00a96d;
 }
 
 /* line 1, ../lib/stylesheets/patterns/_tabs.scss */
