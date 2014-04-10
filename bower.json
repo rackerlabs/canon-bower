@@ -4,7 +4,7 @@
     "name": "https://github.com/rackerlabs/canon/graphs/contributors"
   },
   "name": "canon",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "ignore": [
     "Makefile",
     ".gitignore"
