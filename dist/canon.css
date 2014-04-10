@@ -511,60 +511,64 @@ h1, h2, .rs-page-title, h3, h4 {
 
 /* line 42, ../lib/stylesheets/_base.scss */
 h1, h2, .rs-page-title, h3 {
-  margin: 0 0 20px;
   font-weight: 600;
   line-height: 30px;
 }
 
-/* line 48, ../lib/stylesheets/_base.scss */
+/* line 47, ../lib/stylesheets/_base.scss */
 h4, h5, h6 {
   margin: 0;
 }
 
-/* line 52, ../lib/stylesheets/_base.scss */
+/* line 51, ../lib/stylesheets/_base.scss */
 h5, h6 {
   font-weight: bold;
 }
 
-/* line 56, ../lib/stylesheets/_base.scss */
+/* line 55, ../lib/stylesheets/_base.scss */
 h1 {
   font-size: 32px;
+  margin: 0 0 20px;
 }
 
 /* line 60, ../lib/stylesheets/_base.scss */
 h2, .rs-page-title {
   font-size: 28px;
+  margin: 0 0 20px;
 }
 
-/* line 64, ../lib/stylesheets/_base.scss */
+/* line 65, ../lib/stylesheets/_base.scss */
 h3 {
   font-size: 22px;
+  margin: 0 0 10px;
 }
 
-/* line 68, ../lib/stylesheets/_base.scss */
+/* line 70, ../lib/stylesheets/_base.scss */
 h4 {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
-/* line 74, ../lib/stylesheets/_base.scss */
+/* line 77, ../lib/stylesheets/_base.scss */
 h5 {
-  font-size: 12px;
-}
-
-/* line 78, ../lib/stylesheets/_base.scss */
-h6 {
-  font-size: 10px;
+  font-size: 13px;
+  margin-bottom: 5px;
 }
 
 /* line 82, ../lib/stylesheets/_base.scss */
+h6 {
+  font-size: 12px;
+}
+
+/* line 86, ../lib/stylesheets/_base.scss */
 ol, ul {
   margin: 0 0 20px 25px;
   padding: 0;
 }
 
-/* line 90, ../lib/stylesheets/_base.scss */
+/* line 94, ../lib/stylesheets/_base.scss */
 ol ol,
 ol ul,
 ul ol,
@@ -572,36 +576,112 @@ ul ul {
   margin-bottom: 0;
 }
 
-/* line 94, ../lib/stylesheets/_base.scss */
+/* line 98, ../lib/stylesheets/_base.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 98, ../lib/stylesheets/_base.scss */
+/* line 102, ../lib/stylesheets/_base.scss */
 ul {
   list-style: square;
 }
 
-/* line 102, ../lib/stylesheets/_base.scss */
+/* line 106, ../lib/stylesheets/_base.scss */
 dl {
   margin: 0 0 20px;
 }
 
-/* line 106, ../lib/stylesheets/_base.scss */
+/* line 110, ../lib/stylesheets/_base.scss */
 dd {
   margin: 0 0 0 25px;
 }
 
-/* line 110, ../lib/stylesheets/_base.scss */
+/* line 114, ../lib/stylesheets/_base.scss */
 hr {
   margin: 0 0 20px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
 }
 
-/* line 118, ../lib/stylesheets/_base.scss */
+/* line 121, ../lib/stylesheets/_base.scss */
+code {
+  overflow: auto;
+  padding: 0 5px 1px;
+  background: #f1f1f1;
+  margin: 0 2px;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 132, ../lib/stylesheets/_base.scss */
+pre code {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+/* line 141, ../lib/stylesheets/_base.scss */
+pre {
+  display: block;
+  overflow: auto;
+  background: #f1f1f1;
+  padding: 5px 10px;
+  white-space: pre;
+  word-wrap: normal;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 153, ../lib/stylesheets/_base.scss */
 .rs-page-title {
   color: #c40022;
+}
+
+/* line 159, ../lib/stylesheets/_base.scss */
+.rs-sidebar h3 {
+  margin: 0 0 20px;
+}
+/* line 163, ../lib/stylesheets/_base.scss */
+.rs-sidebar h4 {
+  margin-bottom: 3px;
+}
+/* line 167, ../lib/stylesheets/_base.scss */
+.rs-sidebar p {
+  color: #666;
+}
+/* line 171, ../lib/stylesheets/_base.scss */
+.rs-sidebar hr {
+  margin: 20px 0;
+}
+/* line 175, ../lib/stylesheets/_base.scss */
+.rs-sidebar ul {
+  margin: 0 0 10px 25px;
+  padding: 0;
+}
+/* line 180, ../lib/stylesheets/_base.scss */
+.rs-sidebar li {
+  margin-bottom: 5px;
+}
+/* line 184, ../lib/stylesheets/_base.scss */
+.rs-sidebar pre, .rs-sidebar code {
+  background: white;
+}
+/* line 188, ../lib/stylesheets/_base.scss */
+.rs-sidebar pre code {
+  background-color: transparent;
 }
 
 /* line 72, ../lib/stylesheets/_mixins.scss */
@@ -3122,40 +3202,28 @@ td {
 .rs-nav-primary .rs-nav-item.rs-dropdown .rs-dropdown-menu, .rs-nav-primary .rs-nav > li.rs-dropdown .rs-dropdown-menu {
   margin-top: -2px;
 }
-/* line 75, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.rs-dropdown.active, .rs-nav-primary .rs-nav > li.rs-dropdown.active {
-  margin-right: 20px;
-}
 /* line 79, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-caret {
-  right: 1px;
-}
-/* line 83, ../lib/stylesheets/patterns/_nav-primary.scss */
-.rs-nav-primary .rs-nav-item.rs-dropdown.active > a, .rs-nav-primary .rs-nav > li.rs-dropdown.active > a, .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-nav-link, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-nav-link, .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-nav > li > a, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-nav > li > a {
-  padding-right: 26px;
-}
-/* line 91, ../lib/stylesheets/patterns/_nav-primary.scss */
 .rs-nav-primary .rs-nav-item.rs-dropdown:hover .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown:hover .rs-caret, .rs-nav-primary .rs-nav-item.rs-dropdown.hover .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.hover .rs-caret, .rs-nav-primary .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.active .rs-caret {
   background-position: 16px -297px;
 }
-/* line 97, ../lib/stylesheets/patterns/_nav-primary.scss */
+/* line 85, ../lib/stylesheets/patterns/_nav-primary.scss */
 .rs-nav-primary .rs-nav-item.rs-dropdown.disabled .rs-caret, .rs-nav-primary .rs-nav > li.rs-dropdown.disabled .rs-caret {
   display: none;
 }
 
-/* line 104, ../lib/stylesheets/patterns/_nav-primary.scss */
+/* line 92, ../lib/stylesheets/patterns/_nav-primary.scss */
 .rs-nav-brand {
   float: left;
   margin-top: 10px;
 }
-/* line 108, ../lib/stylesheets/patterns/_nav-primary.scss */
+/* line 96, ../lib/stylesheets/patterns/_nav-primary.scss */
 .rs-nav-brand a {
   background: transparent url(./logo-rackspace.png) no-repeat center center;
   width: 164px;
   height: 70px;
   display: block;
 }
-/* line 115, ../lib/stylesheets/patterns/_nav-primary.scss */
+/* line 103, ../lib/stylesheets/patterns/_nav-primary.scss */
 .rs-nav-brand + .rs-nav {
   padding-left: 190px;
 }
@@ -3688,12 +3756,16 @@ td {
   border: 1px solid #e7e7e7;
   border-top: none;
 }
+/* line 42, ../lib/stylesheets/patterns/_tabs.scss */
+.rs-tab-content .rs-embedded-list-table-wrapper {
+  border: none;
+}
 
-/* line 43, ../lib/stylesheets/patterns/_tabs.scss */
+/* line 47, ../lib/stylesheets/patterns/_tabs.scss */
 .rs-tab-pane {
   display: none;
 }
-/* line 47, ../lib/stylesheets/patterns/_tabs.scss */
+/* line 51, ../lib/stylesheets/patterns/_tabs.scss */
 .rs-tab-pane.active {
   display: block;
 }
