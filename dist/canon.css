@@ -1242,9 +1242,11 @@ body.rs-responsive .rs-container {
 .rs-collapsible-section.expanded > .rs-detail-section-header:hover > .rs-caret, .rs-collapsible-section.collapsed > .rs-detail-section-header > .rs-caret, .rs-collapsible-section.collapsed > .rs-detail-section-header.hover > .rs-caret,
 .rs-collapsible-section.collapsed > .rs-detail-section-header:hover > .rs-caret, .rs-control-group.success .rs-validation-indicator, .rs-form-create .rs-detail-item.success .rs-validation-indicator, .rs-control-group.error .rs-validation-indicator, .rs-form-create .rs-detail-item.error .rs-validation-indicator, .rs-table-sort-asc > .rs-table-sort-indicator, .rs-table-sort-asc.hover > .rs-table-sort-indicator,
 .rs-table-sort-asc:hover > .rs-table-sort-indicator, .rs-table-sort-desc > .rs-table-sort-indicator, .rs-table-sort-desc.hover > .rs-table-sort-indicator,
-.rs-table-sort-desc:hover > .rs-table-sort-indicator, .rs-primary-dropdown .rs-icon-external, .rs-utility-dropdown .rs-dropdown-menu a:hover .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a.hover .rs-icon-external-dark,
+.rs-table-sort-desc:hover > .rs-table-sort-indicator, .rs-primary-dropdown .rs-icon-external, .rs-utility-dropdown .rs-dropdown-menu a:hover .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a.hover .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a:focus .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a.focus .rs-icon-external-dark,
 .rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link:hover .rs-icon-external-dark,
-.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.hover .rs-icon-external-dark, .rs-nav-utility .rs-nav-item.rs-dropdown .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.active .rs-caret {
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.hover .rs-icon-external-dark,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link:focus .rs-icon-external-dark,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.focus .rs-icon-external-dark, .rs-nav-utility .rs-nav-item.rs-dropdown .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown:hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.hover .rs-caret, .rs-nav-utility .rs-nav-item.rs-dropdown.active .rs-caret, .rs-nav-utility .rs-nav > li.rs-dropdown.active .rs-caret {
   background: url('icon-sa54c8cdcf3.png') no-repeat;
 }
 
@@ -1664,18 +1666,21 @@ input::-moz-focus-inner {
   display: inline-block;
   vertical-align: middle;
   background-position: 0 -69px;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
-/* line 161, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 162, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-cog:active, .rs-cog.active, .rs-cog:hover, .rs-cog.hover {
   background-position: 0 -43px;
 }
-/* line 166, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 167, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-cog[disabled], .rs-cog.disabled {
   cursor: default;
   background-position: 0 -95px;
 }
 
-/* line 172, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 173, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-plus {
   width: 12px;
   height: 12px;
@@ -1688,13 +1693,16 @@ input::-moz-focus-inner {
   display: inline-block;
   vertical-align: middle;
   background-position: 0 -614px;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
-/* line 187, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 189, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-plus:active, .rs-plus.active, .rs-plus:hover, .rs-plus.hover {
   background-position: 0 -592px;
 }
 
-/* line 192, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 194, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-delete {
   width: 16px;
   height: 16px;
@@ -1707,9 +1715,12 @@ input::-moz-focus-inner {
   display: inline-block;
   vertical-align: middle;
   background-position: 0 -761px;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-/* line 205, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 208, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-caret {
   width: 10px;
   height: 10px;
@@ -1718,13 +1729,13 @@ input::-moz-focus-inner {
   vertical-align: middle;
   background-position: 0 -281px;
 }
-/* line 213, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 216, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-caret[disabled], .rs-caret.disabled {
   cursor: default;
   background-position: 0 -340px;
 }
 
-/* line 220, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 223, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-action > .rs-cog {
   width: 13px;
   height: 13px;
@@ -1732,23 +1743,23 @@ input::-moz-focus-inner {
   margin-right: 1px;
   background-position: 0 -121px;
 }
-/* line 228, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 231, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-action > .rs-caret {
   margin-top: 2px;
   margin-left: 1px;
 }
-/* line 235, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 238, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-action[disabled] > .rs-cog, .rs-btn-action.disabled > .rs-cog {
   cursor: default;
   background-position: 0 -144px;
 }
-/* line 240, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 243, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-action[disabled] > .rs-caret, .rs-btn-action.disabled > .rs-caret {
   cursor: default;
   background-position: 0 -340px;
 }
 
-/* line 247, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 250, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-group {
   margin: 0 0 10px;
 }
@@ -1765,54 +1776,60 @@ input::-moz-focus-inner {
 .rs-btn-group {
   zoom: 1;
 }
-/* line 251, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 254, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-group > .rs-btn {
   display: block;
   float: left;
   margin-right: 10px;
 }
-/* line 257, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 260, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-btn-group .rs-processing-indicator {
   margin-top: 6px;
   margin-left: -1px;
 }
 
-/* line 263, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 266, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-processing-indicator {
   display: inline-block;
   width: 13px;
   height: 12px;
   vertical-align: text-top;
-  background-image: url("processing-indicator.gif");
+  background-image: image-image-url("processing-indicator.gif");
 }
 
-/* line 268, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 271, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-edit {
-  display: inline-block;
   width: 19px;
   height: 19px;
-  background-color: #fff;
+  margin: 0;
+  padding: 0;
   border: 1px solid transparent;
   box-sizing: border-box;
   cursor: pointer;
   background-position: 0 -313px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
-/* line 280, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 285, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-edit:hover, .rs-edit.hover {
   border-color: #d8d8d8;
 }
-/* line 285, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 290, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-edit:active, .rs-edit.active {
   border-color: transparent;
 }
-/* line 290, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 295, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-edit[disabled], .rs-edit.disabled {
   border-color: transparent;
   cursor: default;
   background-position: 0 -388px;
 }
 
-/* line 300, ../lib/stylesheets/patterns/_buttons.scss */
+/* line 305, ../lib/stylesheets/patterns/_buttons.scss */
 .rs-controls .rs-edit,
 .rs-controls-static .rs-edit,
 .rs-detail-value .rs-edit {
@@ -1923,7 +1940,7 @@ input::-moz-focus-inner {
 .rs-collapsible-section.loading > .rs-detail-section-header > .rs-caret {
   width: 16px;
   height: 16px;
-  background: url("loading-indicator.gif");
+  background: url('loading-indicator.gif?1402594855');
 }
 
 /* line 116, ../lib/stylesheets/patterns/_detail-view.scss */
@@ -2910,73 +2927,78 @@ td {
 }
 
 /* line 96, ../lib/stylesheets/patterns/_list-table.scss */
+.rs-table-edit {
+  width: 16px;
+}
+
+/* line 100, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-delete {
   width: 16px;
 }
 
-/* line 101, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 105, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-input input {
   margin: 0;
 }
 
-/* line 107, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 111, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-select select {
   margin: 0;
 }
 
-/* line 112, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 116, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-ok {
   background-color: #00a96d !important;
 }
-/* line 115, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 119, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-ok.rs-table-status-striped {
-  background-image: url("table-status-success.gif");
+  background-image: url('table-status-success.gif?1402594855');
 }
 
-/* line 121, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 125, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-warning,
 .rs-table-status-processing {
   background-color: #ff9d00 !important;
 }
-/* line 124, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 128, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-warning.rs-table-status-striped,
 .rs-table-status-processing.rs-table-status-striped {
-  background-image: url("table-status-warning.gif");
+  background-image: url('table-status-warning.gif?1402594855');
 }
 
-/* line 129, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 133, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-error {
   background-color: #c40022 !important;
 }
-/* line 132, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 136, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-error.rs-table-status-striped {
-  background-image: url("table-status-error.gif");
+  background-image: url('table-status-error.gif?1402594855');
 }
 
-/* line 137, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 141, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-status-disabled {
   background-color: #cccccc;
 }
 
 /* Table-Based Styles */
 /* Sort Links */
-/* line 159, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 163, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort {
   color: #999999;
 }
-/* line 163, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 167, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort.hover, .rs-table-sort:hover {
   color: #666666;
   text-decoration: none;
 }
 
-/* line 170, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 174, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-text,
 .rs-table-sort-indicator {
   display: inline-block;
 }
 
-/* line 174, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 178, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-indicator {
   width: 9px;
   height: 5px;
@@ -2984,37 +3006,37 @@ td {
   margin-left: 5px;
 }
 
-/* line 182, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 186, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-asc,
 .rs-table-sort-desc {
   color: #333333;
   font-weight: bold;
 }
 
-/* line 187, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 191, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-asc > .rs-table-sort-indicator {
   background-position: 0 -205px;
 }
 
-/* line 192, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 196, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-asc.hover > .rs-table-sort-indicator,
 .rs-table-sort-asc:hover > .rs-table-sort-indicator {
   background-position: 0 -220px;
 }
 
-/* line 196, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 200, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-desc > .rs-table-sort-indicator {
   background-position: 0 -190px;
 }
 
-/* line 201, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 205, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-sort-desc.hover > .rs-table-sort-indicator,
 .rs-table-sort-desc:hover > .rs-table-sort-indicator {
   background-position: 0 -746px;
 }
 
 /* Base Table Overlay */
-/* line 206, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 210, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay {
   display: table;
   width: 100%;
@@ -3022,7 +3044,7 @@ td {
   margin-top: -20px;
 }
 
-/* line 213, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 217, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-content {
   display: table-cell;
   vertical-align: middle;
@@ -3031,12 +3053,12 @@ td {
   text-align: center;
 }
 
-/* line 221, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 225, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-title, .rs-table-overlay-subtitle {
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
 }
 
-/* line 225, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 229, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-title {
   margin-bottom: 5px;
   font-weight: 600;
@@ -3044,31 +3066,31 @@ td {
   color: #666666;
 }
 
-/* line 232, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 236, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-subtitle {
   font-size: 18px;
   color: #999999;
 }
 
-/* line 237, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 241, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-subtitle + .rs-table-overlay-message {
   margin-top: 50px;
 }
 
-/* line 241, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 245, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-message {
   font-size: 13px;
   color: #999999;
 }
 
 /* Loading Overlay */
-/* line 247, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 251, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-loading .rs-table-overlay-message {
   color: #cccccc;
 }
-/* line 249, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 253, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-loading .rs-table-overlay-message:before {
-  background: url("clouding.gif") center center no-repeat;
+  background: url('clouding.gif?1402594855') center center no-repeat;
   content: "";
   display: block;
   height: 20px;
@@ -3078,11 +3100,11 @@ td {
 }
 
 /* Loading Error */
-/* line 261, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 265, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-error .rs-table-overlay-message {
   color: #c40022;
 }
-/* line 264, ../lib/stylesheets/patterns/_list-table.scss */
+/* line 268, ../lib/stylesheets/patterns/_list-table.scss */
 .rs-table-overlay-error .rs-table-overlay-message .rs-icon-error-indicator {
   margin: 1px 5px 0 0;
 }
@@ -3352,32 +3374,34 @@ td {
   font-weight: 600;
   text-decoration: none;
 }
-/* line 93, ../lib/stylesheets/patterns/_menus.scss */
-.rs-primary-dropdown .rs-dropdown-menu a:hover, .rs-primary-dropdown .rs-dropdown-menu a.hover,
+/* line 95, ../lib/stylesheets/patterns/_menus.scss */
+.rs-primary-dropdown .rs-dropdown-menu a:hover, .rs-primary-dropdown .rs-dropdown-menu a.hover, .rs-primary-dropdown .rs-dropdown-menu a:focus, .rs-primary-dropdown .rs-dropdown-menu a.focus,
 .rs-primary-dropdown .rs-dropdown-menu .rs-dropdown-link:hover,
-.rs-primary-dropdown .rs-dropdown-menu .rs-dropdown-link.hover {
+.rs-primary-dropdown .rs-dropdown-menu .rs-dropdown-link.hover,
+.rs-primary-dropdown .rs-dropdown-menu .rs-dropdown-link:focus,
+.rs-primary-dropdown .rs-dropdown-menu .rs-dropdown-link.focus {
   color: #c40022;
   background-color: #f5f5f5;
 }
-/* line 100, ../lib/stylesheets/patterns/_menus.scss */
+/* line 102, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-dropdown-menu > li:first-child,
 .rs-primary-dropdown .rs-dropdown-menu > .rs-dropdown-item:first-child {
   margin-top: 12px;
 }
-/* line 105, ../lib/stylesheets/patterns/_menus.scss */
+/* line 107, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-dropdown-category {
   padding: 0 15px;
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
   font-size: 12px;
   font-weight: 200;
 }
-/* line 114, ../lib/stylesheets/patterns/_menus.scss */
+/* line 116, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-dropdown-category,
 .rs-primary-dropdown .rs-dropdown-menu > li:first-child > .rs-dropdown-category,
 .rs-primary-dropdown .rs-dropdown-menu > .rs-dropdown-item:first-child > .rs-dropdown-category {
   margin: 12px 0 0;
 }
-/* line 118, ../lib/stylesheets/patterns/_menus.scss */
+/* line 120, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-dropdown-caption {
   display: block;
   color: #999999;
@@ -3385,23 +3409,23 @@ td {
   font-size: 12px;
   font-weight: 200;
 }
-/* line 126, ../lib/stylesheets/patterns/_menus.scss */
+/* line 128, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-icon-external {
   background-position: 0 -484px;
 }
-/* line 132, ../lib/stylesheets/patterns/_menus.scss */
+/* line 134, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-dropdown-item.disabled a,
 .rs-primary-dropdown .rs-dropdown-item.disabled .rs-dropdown-link {
   color: #999999;
   background-color: transparent;
 }
-/* line 137, ../lib/stylesheets/patterns/_menus.scss */
+/* line 139, ../lib/stylesheets/patterns/_menus.scss */
 .rs-primary-dropdown .rs-dropdown-item.disabled .rs-dropdown-caption {
   color: #999999;
 }
 
 /** Utility Menu **/
-/* line 146, ../lib/stylesheets/patterns/_menus.scss */
+/* line 148, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-menu {
   border-top: none;
   background: #333;
@@ -3410,40 +3434,44 @@ td {
   font-smoothing: antialiased;
   padding: 8px 0;
 }
-/* line 155, ../lib/stylesheets/patterns/_menus.scss */
+/* line 157, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-menu span,
 .rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-text {
   color: #ccc;
   padding: 2px 15px;
   text-decoration: none;
 }
-/* line 162, ../lib/stylesheets/patterns/_menus.scss */
+/* line 164, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-menu a,
 .rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link {
   color: #ccc;
   padding: 2px 15px;
   text-decoration: none;
 }
-/* line 167, ../lib/stylesheets/patterns/_menus.scss */
+/* line 169, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-menu a .rs-icon-external-dark,
 .rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link .rs-icon-external-dark {
   visibility: hidden;
 }
-/* line 172, ../lib/stylesheets/patterns/_menus.scss */
-.rs-utility-dropdown .rs-dropdown-menu a:hover, .rs-utility-dropdown .rs-dropdown-menu a.hover,
+/* line 176, ../lib/stylesheets/patterns/_menus.scss */
+.rs-utility-dropdown .rs-dropdown-menu a:hover, .rs-utility-dropdown .rs-dropdown-menu a.hover, .rs-utility-dropdown .rs-dropdown-menu a:focus, .rs-utility-dropdown .rs-dropdown-menu a.focus,
 .rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link:hover,
-.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.hover {
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.hover,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link:focus,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.focus {
   color: #fff;
   background-color: #444;
 }
-/* line 176, ../lib/stylesheets/patterns/_menus.scss */
-.rs-utility-dropdown .rs-dropdown-menu a:hover .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a.hover .rs-icon-external-dark,
+/* line 180, ../lib/stylesheets/patterns/_menus.scss */
+.rs-utility-dropdown .rs-dropdown-menu a:hover .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a.hover .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a:focus .rs-icon-external-dark, .rs-utility-dropdown .rs-dropdown-menu a.focus .rs-icon-external-dark,
 .rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link:hover .rs-icon-external-dark,
-.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.hover .rs-icon-external-dark {
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.hover .rs-icon-external-dark,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link:focus .rs-icon-external-dark,
+.rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-link.focus .rs-icon-external-dark {
   visibility: visible;
   background-position: 0 -569px;
 }
-/* line 184, ../lib/stylesheets/patterns/_menus.scss */
+/* line 188, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-menu .rs-dropdown-caption {
   display: block;
   color: #999999;
@@ -3451,7 +3479,7 @@ td {
   font-size: 12px;
   padding: 0;
 }
-/* line 193, ../lib/stylesheets/patterns/_menus.scss */
+/* line 197, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-divider {
   padding: 0;
   margin: 7px 0 8px;
@@ -3459,7 +3487,7 @@ td {
   background: #000;
   border-bottom: 1px solid #434343;
 }
-/* line 201, ../lib/stylesheets/patterns/_menus.scss */
+/* line 205, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-category {
   margin: 7px 0 0;
   padding: 0 15px;
@@ -3467,13 +3495,13 @@ td {
   font-size: 12px;
   font-weight: 200;
 }
-/* line 211, ../lib/stylesheets/patterns/_menus.scss */
+/* line 215, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-item.disabled a,
 .rs-utility-dropdown .rs-dropdown-item.disabled .rs-dropdown-link {
   color: #666666;
   background-color: transparent;
 }
-/* line 216, ../lib/stylesheets/patterns/_menus.scss */
+/* line 220, ../lib/stylesheets/patterns/_menus.scss */
 .rs-utility-dropdown .rs-dropdown-item.disabled .rs-dropdown-caption {
   color: #666666;
 }
@@ -3619,7 +3647,7 @@ td {
 }
 /* line 100, ../lib/stylesheets/patterns/_nav-primary.scss */
 .rs-nav-brand a {
-  background: transparent url(./logo-rackspace.png) no-repeat center center;
+  background: transparent url('logo-rackspace.png?1402594855') no-repeat center center;
   width: 164px;
   height: 70px;
   display: block;
@@ -3989,7 +4017,7 @@ td {
 }
 /* line 52, ../lib/stylesheets/patterns/_progress.scss */
 .rs-bar-info.rs-bar-striped, .rs-bar.rs-status-info.rs-bar-striped {
-  background: url("progress-background-info.gif");
+  background: url('progress-background-info.gif?1402594855');
 }
 
 /* line 57, ../lib/stylesheets/patterns/_progress.scss */
@@ -3998,7 +4026,7 @@ td {
 }
 /* line 60, ../lib/stylesheets/patterns/_progress.scss */
 .rs-bar-ok.rs-bar-striped, .rs-bar.rs-status-ok.rs-bar-striped {
-  background: url("progress-background-success.gif");
+  background: url('progress-background-success.gif?1402594855');
 }
 
 /* line 65, ../lib/stylesheets/patterns/_progress.scss */
@@ -4007,7 +4035,7 @@ td {
 }
 /* line 68, ../lib/stylesheets/patterns/_progress.scss */
 .rs-bar-processing.rs-bar-striped, .rs-bar.rs-status-warning.rs-bar-striped {
-  background: url("progress-background-warning.gif");
+  background: url('progress-background-warning.gif?1402594855');
 }
 
 /* line 73, ../lib/stylesheets/patterns/_progress.scss */
@@ -4016,7 +4044,7 @@ td {
 }
 /* line 76, ../lib/stylesheets/patterns/_progress.scss */
 .rs-bar-error.rs-bar-striped, .rs-bar.rs-status-error.rs-bar-striped {
-  background: url("progress-background-error.gif");
+  background: url('progress-background-error.gif?1402594855');
 }
 
 /* line 82, ../lib/stylesheets/patterns/_progress.scss */
@@ -4138,63 +4166,62 @@ td {
 .rs-status.rs-status-pending {
   color: white;
   background-color: #ff9d00;
-  background-image: url("progress-background.gif");
 }
-/* line 45, ../lib/stylesheets/patterns/_status.scss */
+/* line 44, ../lib/stylesheets/patterns/_status.scss */
 .rs-status.rs-status-processing {
   color: white;
-  background: #ff9d00 url("loading-white-yellow.gif") 4px center no-repeat;
+  background: #ff9d00 url('loading-white-yellow.gif?1402594855') 4px center no-repeat;
   padding-left: 20px;
 }
-/* line 51, ../lib/stylesheets/patterns/_status.scss */
+/* line 50, ../lib/stylesheets/patterns/_status.scss */
 .rs-status.rs-status-processing-ok {
   color: white;
-  background: #00a96d url("loading-white-green.gif") 4px center no-repeat;
+  background: #00a96d url('loading-white-green.gif?1402594855') 4px center no-repeat;
   padding-left: 20px;
 }
-/* line 57, ../lib/stylesheets/patterns/_status.scss */
+/* line 56, ../lib/stylesheets/patterns/_status.scss */
 .rs-status.rs-status-processing-error {
   color: white;
-  background: #c40022 url("loading-red.gif") 4px center no-repeat;
+  background: #c40022 url('loading-red.gif?1402594855') 4px center no-repeat;
   padding-left: 20px;
 }
 
-/* line 65, ../lib/stylesheets/patterns/_status.scss */
+/* line 64, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-ok {
   color: #00a96d;
 }
 
-/* line 69, ../lib/stylesheets/patterns/_status.scss */
+/* line 68, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-warning {
   color: #ff9d00;
 }
 
-/* line 73, ../lib/stylesheets/patterns/_status.scss */
+/* line 72, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-error {
   color: #c40022;
 }
 
-/* line 77, ../lib/stylesheets/patterns/_status.scss */
+/* line 76, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-disabled {
   color: #cccccc;
 }
 
-/* line 81, ../lib/stylesheets/patterns/_status.scss */
+/* line 80, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-pending {
   color: #ff9d00;
 }
 
-/* line 85, ../lib/stylesheets/patterns/_status.scss */
+/* line 84, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-processing {
   color: #ff9d00;
 }
 
-/* line 89, ../lib/stylesheets/patterns/_status.scss */
+/* line 88, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-processing-ok {
   color: #00a96d;
 }
 
-/* line 93, ../lib/stylesheets/patterns/_status.scss */
+/* line 92, ../lib/stylesheets/patterns/_status.scss */
 .rs-status-processing-error {
   color: #c40022;
 }
