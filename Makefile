@@ -12,6 +12,6 @@ default: tmp
 	@cp -rf $</dist/* ./dist
 
 tmp:
-	@git clone https://github.com/rackerlabs/canon.git $@
+	@git clone https://github.com/eddywashere/canon.git $@
 
 .PHONY: default
